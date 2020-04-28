@@ -57,6 +57,9 @@ h1 {
 }
 
 @include mobile {
+    .body {
+        height: 700px;
+    }
     img {
         width: $width-img-mobile_admin;
         height: $height-img-mobile_admin;
@@ -91,6 +94,9 @@ h1 {
 }
 
 @include tablet {
+    .body {
+        height: 890px;
+    }
     img {
         width: $width-img-mobile_admin;
         height: $height-img-mobile_admin;

@@ -84,13 +84,16 @@ a {
 }
 
 @include mobile {
+    .background {
+        height: 700px;
+    }
     img {
         width: $width-img-mobile;
         height: $height-img-mobile;
         margin-left: $margin-left-img-mobile;
     }
     .login {
-        height: 450px;
+        height: auto;
         width: 90%;
         background-color: $color-background;
         margin-left: 5%;
@@ -126,6 +129,9 @@ a {
 }
 
 @include tablet {
+    .background {
+        height: 890px;
+    }
     img {
         width: $width-img-mobile;
         height: $height-img-mobile;

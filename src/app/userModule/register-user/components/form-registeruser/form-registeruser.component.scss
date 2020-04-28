@@ -59,7 +59,6 @@ a {
     width: $width_button;
     margin-top: $margin-top-btn-succes;
     height: $height-btn;
-
 }
 
 .btn-secondary {
@@ -84,6 +83,9 @@ a {
 }
 
 @include mobile {
+    .body {
+        height: 700px;
+    }
     img {
         width: $width-img-mobile;
         height: $height-img-mobile;
@@ -126,6 +128,9 @@ a {
 }
 
 @include tablet {
+    .body {
+        height: 890px;
+    }
     img {
         width: $width-img-mobile;
         height: $height-img-mobile;
