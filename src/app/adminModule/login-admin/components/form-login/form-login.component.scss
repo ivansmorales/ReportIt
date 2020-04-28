@@ -1,0 +1,125 @@
+@import 'src/app/main_components/variables';
+@import '~node_modules/bootstrap/scss/bootstrap';
+@import '~node_modules/bootstrap/scss/variables';
+@import '~node_modules/bootstrap/scss/forms';
+@import '~node_modules/bootstrap/scss/buttons';
+.body {
+    background-color: $color-header-admin;
+    height: 500px;
+}
+
+h1 {
+    color: $color-text;
+    text-align: center;
+}
+
+.login {
+    height: $height-login;
+    width: $width-login;
+    background-color: $color-form;
+    margin-left: $margin_login_signin;
+    margin-right: $margin_login_signin;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.form-control {
+    margin-left: $margin-left-form-control;
+    margin-right: $margin-right-form-control;
+    width: $width-form-control;
+    margin-bottom: 1px;
+    height: $height-form-control;
+}
+
+.form-group {
+    margin-bottom: 8px;
+}
+
+.btn-success {
+    background-color: $color-background;
+    border-color: $color-background-admin;
+    width: $width_button;
+    margin-top: $margin-top-btn-succes_admin;
+    height: $height-btn;
+}
+
+//Mobile version
+@mixin mobile {
+    @media (max-width:#{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:#{$medium-tablet-max-width}) and (max-width:#{$large-tablet-max-width}) {
+        @content;
+    }
+}
+
+@include mobile {
+    img {
+        width: $width-img-mobile_admin;
+        height: $height-img-mobile_admin;
+        margin-left: $margin-left-img-mobile;
+    }
+    .login {
+        height: 450px;
+        width: 90%;
+        background-color: $color-background-admin;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+    .form-control {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 1px;
+        height: 40px;
+    }
+    .btn-success {
+        width: 90%;
+        margin-top: 25px;
+        height: 35px;
+    }
+    .form-group {
+        label {
+            color: white;
+        }
+    }
+}
+
+@include tablet {
+    img {
+        width: $width-img-mobile_admin;
+        height: $height-img-mobile_admin;
+        margin-left: $margin-left-img-mobile;
+    }
+    .login {
+        height: 450px;
+        width: 90%;
+        background-color: $color-background-admin;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+    .form-control {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 1px;
+        height: 40px;
+    }
+    .btn-success {
+        width: 90%;
+        margin-top: 25px;
+        height: 35px;
+    }
+    .form-group {
+        label {
+            color: white;
+        }
+    }
+}

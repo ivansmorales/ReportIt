@@ -1,0 +1,33 @@
+@import 'src/app/main_components/variables';
+.footer {
+    background-color: $color-footer;
+    text-align: center;
+    padding-top: $padding_footer;
+    height: $height_footer;
+    width: 100%;
+}
+
+//Mobile version
+@mixin mobile {
+    @media (max-width:#{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:#{$medium-tablet-max-width}) and (max-width:#{$large-tablet-max-width}) {
+        @content;
+    }
+}
+
+@include mobile {
+    .footer {
+        width: 100%;
+    }
+}
+
+@include tablet {
+    .footer {
+        width: 100%;
+    }
+}
