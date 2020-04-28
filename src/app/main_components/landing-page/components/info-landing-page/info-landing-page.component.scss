@@ -247,6 +247,9 @@ img {
             transform: rotate(45deg);
         }
     }
+    #contactH1 {
+        font-size: 40px;
+    }
 }
 
 @include tablet_large {
@@ -290,5 +293,8 @@ img {
             top: 30px;
             transform: rotate(45deg);
         }
+    }
+    #contactH1 {
+        font-size: 40px;
     }
 }

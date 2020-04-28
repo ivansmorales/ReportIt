@@ -2,7 +2,7 @@
     <nav class="charcoal">
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo">
-                <img src="img/logo_admin.png" alt="" width="150" height="50" style="margin-top: 6px;">
+                <img src="assets/img/logo_admin.png" alt="" width="150" height="50" style="margin-top: 6px;">
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a onclick="verReportes()">Inicio</a></li>
@@ -31,11 +31,28 @@
 </div>
 <section id="main">
     <div class="row">
+        <!--
         <div class="col s2 lefty">
             <button onclick="verReportes()"><i class="fas fa-comment-alt"></i> &emsp;Reportes</button>
             <button onclick="verCrear()"><i class="fas fa-newspaper"></i> &emsp;Editar</button>
             <button onclick="verValorado()"><i class="far fa-star"></i> &emsp;Valorado</button>
         </div>
+    -->
+        <aside id="left-sidebar-nav">
+            <ul id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y" style="width: 240px; left: -250px;">
+
+                <li class="li-sidebar">
+                    <i class="fas fa-comment-alt"></i> Reportes
+                </li>
+                <li class="li-sidebar">
+                    <i class="fas fa-newspaper"></i> Editar
+                </li>
+                <li class="li-sidebar">
+                    <i class="fas fa-star"></i> Valorado
+                </li>
+            </ul>
+
+        </aside>
         <div class="col s10 righty">
             <div id="crear" class="container">
                 <h1>Reporte de Incidencias</h1>

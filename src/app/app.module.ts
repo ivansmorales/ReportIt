@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReportsComponent } from './main_components/reports/reports.component';
-import { ReportsAdminComponent } from './main_components/reports-admin/reports-admin.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ReportsComponent } from './userModule/reports/reports.component';
+import { ReportsAdminComponent } from './adminModule/reports-admin/reports-admin.component';
 
 //Imports del componente LandingPage
 import { LandingPageComponent } from './main_components/landing-page/landing-page.component';
@@ -26,9 +28,10 @@ import{RegisterUserComponent} from './userModule/register-user/register-user.com
 //Imports del componente Login de Admin
 import{LoginAdminComponent} from './adminModule/login-admin/login-admin.component'
 import{FormLoginComponent} from './adminModule/login-admin/components/form-login/form-login.component'
-import{HeaderAdminComponent} from './adminModule/login-admin/components/header-admin/header-admin.component'
+import{HeaderAdminComponent} from './adminModule/login-admin/components/header-admin/header-admin.component';
+import { CarrouselComponent } from './main_components/landing-page/components/carrousel/carrousel.component'
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegisterUserComponent,
     LoginAdminComponent, 
     FormLoginComponent,
-    HeaderAdminComponent
+    HeaderAdminComponent,
+    CarrouselComponent
 
   ],
   imports: [

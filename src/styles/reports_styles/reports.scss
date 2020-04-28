@@ -5,6 +5,7 @@ $amaranth: #E93148;
 $deep: #FFA730;
 $main: #EDEDED;
 @import "media_reports";
+@import 'src/styles/variables';
 .li-sidebar {
     color: #2f404e;
     margin-top: 50px;
@@ -144,6 +145,8 @@ body {
     }
 }
 
+
+/*
 @media only screen and (max-width: 992px) {
     .li-sidebar {
         display: none;
@@ -152,3 +155,35 @@ body {
         display: none;
     }
 }
+*/
+
+@mixin mobile {
+    @media (max-width:#{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin tablet_large {
+    @media (max-width:#{$large-tablet-max-width}) {
+        @content;
+    }
+}
+
+@mixin tablet_small {
+    @media (min-width:#{$medium-tablet-max-width}) {
+        @content;
+    }
+}
+
+@include mobile {
+    .li-sidebar {
+        display: none;
+    }
+    .left-sidebar-nav {
+        display: none;
+    }
+}
+
+@include tablet_large {}
+
+@include tablet_small {}
