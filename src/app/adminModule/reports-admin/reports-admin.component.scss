@@ -1,29 +1,20 @@
 @import "~materialize-css/sass/materialize.scss";
-
 $jungleg: #26A195;
 $charcoal: #2F404E;
-
 body {
-
     #navbar {
-
         .charcoal {
             background-color: $jungleg;
         }
     }
-
     #main {
-
         .righty {
-
             #reportes {
                 display: block;
-
                 a {
                     background-color: $charcoal;
                 }
             }
-
             #crear {
                 display: none;
             }
