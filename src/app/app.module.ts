@@ -29,7 +29,8 @@ import{RegisterUserComponent} from './userModule/register-user/register-user.com
 import{LoginAdminComponent} from './adminModule/login-admin/login-admin.component'
 import{FormLoginComponent} from './adminModule/login-admin/components/form-login/form-login.component'
 import{HeaderAdminComponent} from './adminModule/login-admin/components/header-admin/header-admin.component';
-import { CarrouselComponent } from './main_components/landing-page/components/carrousel/carrousel.component'
+import { CarrouselComponent } from './main_components/landing-page/components/carrousel/carrousel.component';
+import { PageNotFoundComponent } from './main_components/page-not-found/page-not-found.component'
 
 
 
@@ -50,7 +51,8 @@ import { CarrouselComponent } from './main_components/landing-page/components/ca
     LoginAdminComponent, 
     FormLoginComponent,
     HeaderAdminComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    PageNotFoundComponent
 
   ],
   imports: [
