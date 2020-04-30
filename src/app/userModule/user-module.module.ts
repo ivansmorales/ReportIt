@@ -5,13 +5,13 @@ import { LogInUserComponent } from './log-in-user/log-in-user.component';
 import { ReportsUserComponent } from './reports-user/reports-user.component';
 import { FormularioLogInComponent } from './log-in-user/components/formulario-log-in/formulario-log-in.component';
 import { FormRegisteruserComponent } from './register-user/components/form-registeruser/form-registeruser.component';
-
-
+import { UserRoutingModule } from './user-routing.module';
 
 @NgModule({
   declarations: [RegisterUserComponent, LogInUserComponent, ReportsUserComponent, FormularioLogInComponent, FormRegisteruserComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    UserRoutingModule
   ]
 })
 export class UserModuleModule { }
