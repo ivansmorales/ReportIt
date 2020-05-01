@@ -5,6 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//Modulos
+import {UserModuleModule} from './userModule/user-module.module';
+import {AdminModuleModule} from './adminModule/admin-module.module';
+
+/*
 import { ReportsComponent } from './userModule/reports/reports.component';
 import { ReportsAdminComponent } from './adminModule/reports-admin/reports-admin.component';
 
@@ -32,33 +37,22 @@ import{HeaderAdminComponent} from './adminModule/login-admin/components/header-a
 import { CarrouselComponent } from './main_components/landing-page/components/carrousel/carrousel.component';
 import { PageNotFoundComponent } from './main_components/page-not-found/page-not-found.component'
 
-
+*/
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ReportsComponent,
-    ReportsAdminComponent,
-    LandingPageComponent,
-    HeaderLandingPageComponent,
-    InfoLandingPageComponent,
-    FooterComponent,
-    LogInUserComponent,
-    FormularioLogInComponent,
-    HeaderRegisterLogInUserComponent,
-    FormRegisteruserComponent,
-    RegisterUserComponent,
-    LoginAdminComponent, 
-    FormLoginComponent,
-    HeaderAdminComponent,
-    CarrouselComponent,
-    PageNotFoundComponent
+    AppComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    UserModuleModule,
+    AdminModuleModule  
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
