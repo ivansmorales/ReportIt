@@ -22,6 +22,8 @@
     "@fortawesome/angular-fontawesome": "^0.6.1",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@mdi/font": "^5.1.45",
+    "@types/jest": "^25.2.1",
+    "@types/mocha": "^7.0.2",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.0",
     "materialize-css": "^1.0.0",
@@ -32,7 +34,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.901.3",
+    "@angular-devkit/build-angular": "^0.901.4",
     "@angular/cli": "~9.1.1",
     "@angular/compiler-cli": "~9.1.1",
     "@angular/language-service": "~9.1.1",

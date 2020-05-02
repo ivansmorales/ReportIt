@@ -6,9 +6,11 @@ import { ReportsUserComponent } from './reports-user/reports-user.component';
 import { FormularioLogInComponent } from './log-in-user/components/formulario-log-in/formulario-log-in.component';
 import { FormRegisteruserComponent } from './register-user/components/form-registeruser/form-registeruser.component';
 import { UserRoutingModule } from './user-routing.module';
+import { HeaderLoginRegisterComponent } from './main-components/header-login-register/header-login-register.component';
+import { FooterLoginRegisterComponent } from './main-components/footer-login-register/footer-login-register.component';
 
 @NgModule({
-  declarations: [RegisterUserComponent, LogInUserComponent, ReportsUserComponent, FormularioLogInComponent, FormRegisteruserComponent],
+  declarations: [RegisterUserComponent, LogInUserComponent, ReportsUserComponent, FormularioLogInComponent, FormRegisteruserComponent, HeaderLoginRegisterComponent, FooterLoginRegisterComponent],
   imports: [
     CommonModule,
     UserRoutingModule
