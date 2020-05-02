@@ -16,6 +16,9 @@ import {InfoLandingPageComponent} from './main_components/landing-page/component
 
 //Footer
 import {FooterComponent} from './main_components/footer/footer.component';
+import {PageNotFoundComponent} from './main_components/page-not-found/page-not-found.component' 
+import { HeaderpagenotfoundComponent } from './main_components/page-not-found/components/headerpagenotfound/headerpagenotfound.component';
+import { ErrorMessageComponent } from './main_components/page-not-found/components/error-message/error-message.component';
  
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import {FooterComponent} from './main_components/footer/footer.component';
     LandingPageComponent,
     HeaderLandingPageComponent,
     InfoLandingPageComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderpagenotfoundComponent,
+    ErrorMessageComponent,
+    PageNotFoundComponent
 
   ],
   imports: [

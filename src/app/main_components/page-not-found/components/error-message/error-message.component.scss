@@ -1,0 +1,30 @@
+@import 'src/app/main_components/variables';
+@import '~node_modules/bootstrap/scss/bootstrap';
+@import '~node_modules/bootstrap/scss/variables';
+@import '~node_modules/bootstrap/scss/forms';
+@import '~node_modules/bootstrap/scss/buttons';
+.img-404 {
+    margin-top: 17vh;
+    width: 200px;
+    height: 200px;
+    margin-left: 44%;
+    margin-right: 44%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.message {
+    height: 84vh;
+    width: 100%;
+    background-color: $color-background;
+}
+
+.btn-secondary {
+    margin-left: 46%;
+    margin-right: 44%;
+}
