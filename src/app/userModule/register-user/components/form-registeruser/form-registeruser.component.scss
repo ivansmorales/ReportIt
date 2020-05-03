@@ -5,7 +5,7 @@
 @import '~node_modules/bootstrap/scss/buttons';
 .body {
     background-color: $color-background;
-    height: 500px;
+    height: 76vh;
 }
 
 h1 {
@@ -84,7 +84,7 @@ a {
 
 @include mobile {
     .body {
-        height: 700px;
+        height: 76vh;
     }
     img {
         width: $width-img-mobile;
@@ -129,7 +129,7 @@ a {
 
 @include tablet {
     .body {
-        height: 890px;
+        height: 76vh;
     }
     img {
         width: $width-img-mobile;
