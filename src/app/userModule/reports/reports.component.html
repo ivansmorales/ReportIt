@@ -5,8 +5,8 @@
                 <img src="assets/img/logo.png" alt="" width="150" height="70">
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a onclick="verReportes()">Inicio</a></li>
-                <li><a href="login.html">Cerrar Sesión</a></li>
+                <li><a>Inicio</a></li>
+                <li><a href="">Cerrar Sesión</a></li>
             </ul>
             <ul id="slide-out" class="sidenav">
                 <li>
@@ -15,17 +15,17 @@
                 <li>
                     <div class="divider"></div>
                 </li>
-                <li><a class="waves-effect" onclick="verReportes()">Inicio</a></li>
+                <li><a class="waves-effect" >Inicio</a></li>
                 <li><a class="waves-effect" href="login.html">Cerrar sesión</a></li>
                 <li>
                     <a class="subheader"></a>
                 </li>
-                <li><a class="sidenav-close" onclick="verCrear()"><i class="far fa-newspaper"></i>Crear</a></li>
-                <li><a class="sidenav-close" onclick="verReportes()"><i class="fas fa-comment-alt"></i>Reportes</a>
+                <li><a class="sidenav-close" (click)="verCrear()"><i class="far fa-newspaper"></i>Crear</a></li>
+                <li (click)="verReportes()"><a class="sidenav-close"><i class="fas fa-comment-alt"></i>Reportes</a>
                 </li>
-                <li><a class="sidenav-close" onclick="verHistorial()"><i class="fas fa-history"></i>Historial</a>
+                <li><a class="sidenav-close" (click)="verHistorial()"><i class="fas fa-history"></i>Historial</a>
                 </li>
-                <li><a class="sidenav-close" onclick="verValorado()"><i class="fas fa-star"></i>Valorado</a></li>
+                <li><a class="sidenav-close" (click)="verValorado()"><i class="fas fa-star"></i>Valorado</a></li>
             </ul>
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
         </div>
@@ -60,11 +60,6 @@
 
         </aside>
 
-
-        <!--
-
-            <div class="line"></div>
-        -->
         <div class="col s10 righty">
             <div id="crear" class="container">
                 <h1>Reporte de Incidencias</h1>
@@ -103,7 +98,7 @@
                     </form>
                 </div>
             </div>
-            <div id="reportes" class="container">
+            <ng-container *ngIf="show" id="reportes" class="container" >
                 <div class="report">
                     <div class="row">
                         <div class="col s6 col-img">
@@ -171,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </ng-container>
             <div id="historial" class="container">
                 <div class="report">
                     <div class="row">

@@ -6,6 +6,8 @@ $deep: #FFA730;
 $main: #EDEDED;
 @import "media_reports";
 @import 'src/styles/variables';
+
+
 .li-sidebar {
     color: #2f404e;
     margin-top: 50px;
@@ -13,6 +15,17 @@ $main: #EDEDED;
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
+    width: 100%;
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+    font-size: 1.3rem;
+    
+}
+
+.li-sidebar:hover{
+    background-color: $jungleg;
+    color: $babypowder;
+    cursor: pointer;
 }
 
 body {
@@ -26,10 +39,12 @@ body {
         }
         .charcoal {
             background-color: $charcoal;
+
         }
         .right {
             padding-right: 10rem;
         }
+
     }
     #main {
         //padding-top: 2rem;
