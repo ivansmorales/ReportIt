@@ -8,21 +8,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportsComponent implements OnInit {
 
-  public show : boolean = false;
+  public divCrear : boolean = true;
+  public divReportes : boolean = true;
+  public divHistorial : boolean = true;
+  public divValorado : boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  verCrear(){}
-  
-  verReportes(){
-    //this.show = !this.show;
-    console.log("click");
+  verCrear(){
+    this.divCrear = true;
+    this.divReportes = false;
+    this.divHistorial = false;
+    this.divValorado = false;
   }
 
-  verHistorial(){}
-  verValorado(){}
+  verReportes(){
+    this.divCrear = false;
+    this.divReportes = true;
+    this.divHistorial = false;
+    this.divValorado = false;
+  }
+
+  verHistorial(){
+    this.divCrear = false;
+    this.divReportes = false;
+    this.divHistorial = true;
+    this.divValorado = false;
+  }
+
+  verValorado(){
+    this.divCrear = false;
+    this.divReportes = false;
+    this.divHistorial = false;
+    this.divValorado = true;
+  }
 
 }
