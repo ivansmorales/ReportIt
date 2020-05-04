@@ -5,7 +5,7 @@
                 <img src="assets/img/logo.png" alt="" width="150" height="70">
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a>Inicio</a></li>
+                <li (click)="verCrear()"><a>Inicio</a></li>
                 <li><a href="">Cerrar Sesión</a></li>
             </ul>
             <ul id="slide-out" class="sidenav">
@@ -61,7 +61,7 @@
         </aside>
 
         <div class="col s10 righty">
-            <div *ngIf="divCrear" id="crear" class="container">
+            <div [hidden]="divCrear" id="crear" class="container">
                 <h1>Reporte de Incidencias</h1>
                 <div class="row inside-container">
                     <form class="col s12">
@@ -98,7 +98,7 @@
                     </form>
                 </div>
             </div>
-            <div *ngIf="divReportes" id="reportes" class="container" >
+            <div [hidden]="divReportes" id="reportes" class="container" >
                 <div class="report">
                     <div class="row">
                         <div class="col s6 col-img">
@@ -167,7 +167,7 @@
                     </div>
                 </div>
             </div>
-            <div *ngIf="divHistorial" id="historial" class="container">
+            <div [hidden]="divHistorial" id="historial" class="container">
                 <div class="report">
                     <div class="row">
                         <div class="col s6 col-img">
@@ -200,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            <div *ngIf="divValorado" id="valorado" class="container">
+            <div [hidden]="divValorado" id="valorado" class="container">
                 <div class="report">
                     <div class="row">
                         <div class="col s6 col-img">

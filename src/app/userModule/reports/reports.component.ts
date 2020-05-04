@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportsComponent implements OnInit {
 
-  public divCrear : boolean = true;
+  public divCrear : boolean = false;
   public divReportes : boolean = true;
   public divHistorial : boolean = true;
   public divValorado : boolean = true;
@@ -19,31 +19,31 @@ export class ReportsComponent implements OnInit {
   }
 
   verCrear(){
-    this.divCrear = true;
-    this.divReportes = false;
-    this.divHistorial = false;
-    this.divValorado = false;
+    this.divCrear = false;
+    this.divReportes = true;
+    this.divHistorial = true;
+    this.divValorado = true;
   }
 
   verReportes(){
-    this.divCrear = false;
-    this.divReportes = true;
-    this.divHistorial = false;
-    this.divValorado = false;
+    this.divCrear = true;
+    this.divReportes = false;
+    this.divHistorial = true;
+    this.divValorado = true;
   }
 
   verHistorial(){
-    this.divCrear = false;
-    this.divReportes = false;
-    this.divHistorial = true;
-    this.divValorado = false;
+    this.divCrear = true;
+    this.divReportes = true;
+    this.divHistorial = false;
+    this.divValorado = true;
   }
 
   verValorado(){
-    this.divCrear = false;
-    this.divReportes = false;
-    this.divHistorial = false;
-    this.divValorado = true;
+    this.divCrear = true;
+    this.divReportes = true;
+    this.divHistorial = true;
+    this.divValorado = false;
   }
 
 }
