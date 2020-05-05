@@ -22,4 +22,7 @@ export class AdminService {
     this.admins.splice(1,0);
   }
 
+  /* Método para descargar reportes */
+  /* Método para editar reportes */
+
 }
