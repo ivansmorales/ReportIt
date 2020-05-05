@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
+@DiegoMoreno1110 A01337594
+@aleesolish A01650803
+@ivansmorales A01652650
+
+Para descargar los módulos, favor de escribir el siguiente comando: npm install --save-dev @angular-devkit/build-angular
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
