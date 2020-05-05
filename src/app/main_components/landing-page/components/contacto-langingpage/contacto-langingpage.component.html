@@ -1,0 +1,51 @@
+<p>contacto-langingpage works!</p>
+<section class="contact" id="contact">
+    <h1 id="contactH1">Contáctanos</h1>
+
+    <div class="mb-4 ">
+        <p class="text-center w-responsive mx-auto mb-5 "> Puedes dejarnos un mensaje en la siguiente caja y nos pondremos en contacto contigo.</p>
+
+        <div class="row text-center ">
+            <div class="col-md-9 mb-md-0 mb-5 ">
+                <form id="contact-form" name="contact-form " action="mail.php " method="POST">
+                    <div class="form-row ">
+                        <div class="form-group col-md-6 ">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label for="subject">Título</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Título">
+                    </div>
+                    <div class="form-group ">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Aquí escribe tu mensaje "></textarea>
+                    </div>
+                    <a class="btn btn-success " onclick="document.getElementById( 'contact-form').submit(); ">Enviar</a>
+                </form>
+            </div>
+
+            <div class="col-md-3 text-center ">
+                <ul class="list-unstyled mb-0 ">
+                    <li><i class="icon fas fa-map-marker-alt fa-2x "></i>
+                        <p>Tecnológico de Monterrey Campus Ciudad de México</p>
+                    </li>
+                    <li><i class="icon fas fa-phone mt-4 fa-2x "></i>
+                        <p>+ 55 5483 2020</p>
+                    </li>
+                    <li><i class="icon fas fa-envelope mt-4 fa-2x "></i>
+                        <p>contact@reportit.com</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

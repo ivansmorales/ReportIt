@@ -4,74 +4,29 @@
 @import 'node_modules/bootstrap/scss/forms';
 @import 'node_modules/bootstrap/scss/carousel';
 @import 'node_modules/bootstrap/scss/buttons';
-img {
-    .size {
-        width: 250px;
-        height: 250px;
-        border: 0px solid;
-        border-radius: 50%;
+
+/* Carousel */
+
+.carousel {
+    img {
+        width: 30%;
     }
 }
 
-img {
-    width: $width_logo_header;
-    height: $height_logo_header;
-    margin-left: 125px;
-}
-
-
-/* Features */
-
-.features {
-    padding: 5% 15%;
-    height: 100vh;
-    background-color: $color-background;
-}
-
-.features {
-    h1 {
-        color: $color-background-admin;
-        font-size: 50px;
-        text-align: center;
-    }
-}
-
-.features {
+.carousel {
     p {
-        margin-top: 50px;
-        color: white;
-        font-size: 20px;
-        text-align: center;
+        font-size: 1.3rem;
     }
 }
 
-.feature-title {
-    font-size: 30px;
-    color: $color-background-admin;
-}
-
-.feature-box {
-    padding: 4.5%;
-    text-align: center;
-}
-
-.icon {
-    color: $color-background-admin;
-    margin-bottom: 1rem;
-}
-
-.icon:hover {
-    color: white;
-}
-
-.featuresp {
-    color: #fff;
-}
-
-.size {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
+.carousel-item {
+    height: 89vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 //Mobile version

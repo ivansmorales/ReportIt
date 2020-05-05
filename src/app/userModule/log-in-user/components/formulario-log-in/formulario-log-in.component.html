@@ -2,7 +2,7 @@
     <section class="login">
         <h1>Iniciar Sesión</h1>
         <p>
-            ¿No tienes cuenta? <a href="register.html">Regístrate</a>
+            ¿No tienes cuenta? <a routerLink="/users/registerUser">Regístrate</a>
         </p>
 
         <div class="container text-center">
@@ -21,12 +21,12 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="button" onclick="window.location.href = 'reports.html';" class="btn btn-success" value="Iniciar Sesión" />
+                    <input type="button" routerLink="/users/reports" class="btn btn-success" value="Iniciar Sesión" />
 
                 </div>
 
                 <div class="form-group">
-                    <input type="button" onclick="window.location.href = 'reports.html';" class="btn btn-secondary" value="Iniciar Sesión con Twitter" />
+                    <input type="button" routerLink="/users/reports" class="btn btn-secondary" value="Iniciar Sesión con Twitter" />
                 </div>
 
 
