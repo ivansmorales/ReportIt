@@ -25,6 +25,7 @@
     "@types/jest": "^25.2.1",
     "@types/mocha": "^7.0.2",
     "bootstrap": "^4.4.1",
+    "canvasjs": "^1.8.3",
     "jquery": "^3.5.0",
     "materialize-css": "^1.0.0",
     "ngx-bootstrap": "^5.6.1",

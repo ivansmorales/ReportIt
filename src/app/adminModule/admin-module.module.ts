@@ -9,11 +9,12 @@ import { HeaderAdminComponent } from './login-admin/components/header-admin/head
 import {ReportsAdminComponent} from './reports-admin/reports-admin.component';
 import { FooterAdminComponent } from './main-components/footer-admin/footer-admin.component';
 import { HeaderLoginComponent } from './main-components/header-login/header-login.component';
+import { GraphsAdminComponent } from './reports-admin/components/graphs-admin/graphs-admin.component';
 
 
 
 @NgModule({
-  declarations: [LoginAdminComponent, FormLoginComponent, HeaderAdminComponent, ReportsAdminComponent, FooterAdminComponent, HeaderLoginComponent],
+  declarations: [LoginAdminComponent, FormLoginComponent, HeaderAdminComponent, ReportsAdminComponent, FooterAdminComponent, HeaderLoginComponent, GraphsAdminComponent],
   imports: [
     CommonModule,
     AdminRoutingModule
