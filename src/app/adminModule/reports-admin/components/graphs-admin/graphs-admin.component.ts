@@ -34,7 +34,7 @@ export class GraphsAdminComponent implements OnInit {
         }]
       });
     let chart2 = new CanvasJS.Chart("chartContainer2", {
-      theme: "light2",
+      theme: "light1",
       animationEnabled: true,
       title: {
         text: "Reportes sobre accidentes de auto por mes durante el 2020 en la CDMX"
@@ -51,7 +51,7 @@ export class GraphsAdminComponent implements OnInit {
       }]
     });
     let chart3 = new CanvasJS.Chart("chartContainer3", {
-      theme: "light1",
+      theme: "light2",
       animationEnabled: true,
       title: {
         text: "Tipos de reportes presentados en 2019 en todo México"
