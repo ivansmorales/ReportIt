@@ -45,7 +45,7 @@
                     <i class="fas fa-comment-alt"></i> Reportes
                 </li>
                 <li class="li-sidebar" (click)="verEditar()">
-                    <i class="fas fa-newspaper" ></i> &nbsp;&nbsp;&nbsp;Editar
+                    <i class="fas fa-newspaper"></i> &nbsp;&nbsp;&nbsp;Editar
                 </li>
                 <li class="li-sidebar" (click)="verValorado()">
                     <i class="fas fa-star"></i> Valorado
@@ -173,7 +173,21 @@
                 <div class="report">
                     <div class="row">
                         <div class="col s6 col-img" style="width: 750px;">
-                            <h1>Usuarios</h1>       
+                            <h1>Usuarios</h1>
+                            <table>
+                                <thead>
+                                    <th>Nombre</th>
+                                    <th>Correo</th>
+                                    <th>Contraseña</th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let variableUsers of users">
+                                        <td>{{variableUsers.nombre}}</td>
+                                        <td>{{variableUsers.correo}}</td>
+                                        <td>{{variableUsers.contrasena}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -182,7 +196,7 @@
                 <div class="report">
                     <div class="row">
                         <div class="col s6 col-img" style="width: 750px;">
-                            <app-graphs-admin></app-graphs-admin>          
+                            <app-graphs-admin></app-graphs-admin>
                         </div>
                     </div>
                 </div>

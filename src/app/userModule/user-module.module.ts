@@ -1,5 +1,10 @@
 import { NgModule } from '@angular/core';
+
+import { FormsModule } from "@angular/forms";
+
 import { CommonModule } from '@angular/common';
+
+
 import { RegisterUserComponent } from './register-user/register-user.component';
 import { LogInUserComponent } from './log-in-user/log-in-user.component';
 import { ReportsUserComponent } from './reports-user/reports-user.component';
@@ -13,7 +18,8 @@ import { FooterLoginRegisterComponent } from './main-components/footer-login-reg
   declarations: [RegisterUserComponent, LogInUserComponent, ReportsUserComponent, FormularioLogInComponent, FormRegisteruserComponent, HeaderLoginRegisterComponent, FooterLoginRegisterComponent],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    FormsModule
   ]
 })
 export class UserModuleModule { }

@@ -8,7 +8,14 @@ import { Report } from '../models/report';
 
 export class UserService {
 
-  users = [new User("Usuario", "id", (new Report("Titulo reporte", "Nombre que hace el reporte", "Fecha reporte", "Descripcion del reporte", "Foto", "Hora"))) ];
+  //users = [new User("Usuario", "id", (new Report("Titulo reporte", "Nombre que hace el reporte", "Fecha reporte", "Descripcion del reporte", "Foto", "Hora"))) ];
+
+  users = [new User("Diego", "Correo", "Contraseña"),
+           new User("Alexandra", "Correo", "Contraseña"),
+           new User("Iván", "Correo", "Contraseña"),
+          ];
+
+  
 
   constructor() { }
 

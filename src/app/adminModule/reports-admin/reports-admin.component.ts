@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../../userModule/services/user.service';
+import { User } from '../../userModule/models/user';
 
 @Component({
   selector: 'app-reports-admin',
   templateUrl: './reports-admin.component.html',
-  styleUrls: ['./reports-admin.component.scss']
+  styleUrls: ['./reports-admin.component.scss'],
+  providers: [UserService]
 })
 export class ReportsAdminComponent implements OnInit {
 
@@ -13,10 +16,22 @@ export class ReportsAdminComponent implements OnInit {
   public divUsers : boolean = true;
   public divGraphs : boolean = true;
 
-  constructor() { }
+  constructor(public userService : UserService) { }
 
   ngOnInit(): void {
+    this.getUsers();
   }
+
+  users = [new User("Diego", "diego@reportit.com", "Contraseña"),
+           new User("Alexandra", "ale@reportit.com", "Contraseña"),
+           new User("Iván", "ivan@reportit.com", "Contraseña"),
+          ];
+
+
+  getUsers(){
+    this.users = this.userService.getUsers();
+  }
+  
 
   verReportes(){
     this.divReportes = false;
