@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {UserModuleModule} from './userModule/user-module.module';
 import {AdminModuleModule} from './adminModule/admin-module.module';
 
+import {LogalStorageService} from './userModule/services/logal-storage.service';
+
 //Landing Page
 import {LandingPageComponent} from './main_components/landing-page/landing-page.component';
 import {HeaderLandingPageComponent} from './main_components/landing-page/components/header-landing-page/header-landing-page.component';
@@ -23,7 +25,8 @@ import { ErrorMessageComponent } from './main_components/page-not-found/componen
 import { CarouselLandingpageComponent } from './main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component';
 import { ContactoLangingpageComponent } from './main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component';
 import { IntegrantesLandingpageComponent } from './main_components/landing-page/components/integrantes-landingpage/integrantes-landingpage.component';
- 
+
+
 @NgModule({
   declarations: [
     AppComponent,

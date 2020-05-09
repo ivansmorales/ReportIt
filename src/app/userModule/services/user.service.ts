@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/user';
 import { Report } from '../models/report';
+import {StorageService} from 'ngx-webstorage-service';
 
 @Injectable({
   providedIn: 'root'
