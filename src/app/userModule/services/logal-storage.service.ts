@@ -7,7 +7,7 @@ import { User } from '../models/user';
 })
 export class LogalStorageService {
 
-  public userList : User ;
+  public userList : User;
 
   constructor(@Inject(LOCAL_STORAGE) private storage: StorageService) { }
 

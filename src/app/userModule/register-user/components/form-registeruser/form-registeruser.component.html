@@ -9,8 +9,6 @@
         <div class="container text-center">
             <form #userCreateForm="ngForm" (ngSubmit)="onSubmit()">
 
-                {{userCreateForm | json}}
-
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="userName" [(ngModel)]="userModel.nombre">

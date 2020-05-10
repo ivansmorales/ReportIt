@@ -19,20 +19,23 @@ export class ReportsAdminComponent implements OnInit {
 
   constructor(public userService : UserService, public localStorageService : LogalStorageService) { }
 
+  user : User = this.localStorageService.readLocalStorage();
+
   ngOnInit(): void {
-    this.getUsers();
+    //this.getUsers();
+    //this.localStorageService.readLocalStorage();
   }
 
+  /*
   users = [new User("Diego", "diego@reportit.com", "Contraseña"),
            new User("Alexandra", "ale@reportit.com", "Contraseña"),
            new User("Iván", "ivan@reportit.com", "Contraseña"),
           ];
-
-
+  
   getUsers(){
     this.users = this.userService.getUsers();
   }
-  
+  */
 
   verReportes(){
     this.divReportes = false;

@@ -11,7 +11,6 @@ export class User {
         public correo? : string,
         public contrasena? : string
         
-        
         /*
         public id? : string,
         public report? : Report

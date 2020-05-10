@@ -20,8 +20,8 @@ export class FormRegisteruserComponent implements OnInit {
 
   ngOnInit(): void {
     
-    this.localStorageService.storeOnLocalStorage(new User("P","P","P"));
-    this.localStorageService.readLocalStorage();
+    //this.localStorageService.storeOnLocalStorage(new User("EjemploNombre","EjemploMail","EjemplPassword"));
+    //this.localStorageService.readLocalStorage();
 
   }
 
@@ -36,7 +36,7 @@ export class FormRegisteruserComponent implements OnInit {
   }
 
   load(){
-    this.usuarios = this.localStorageService.readLocalStorage();
+    this.userModel = this.localStorageService.readLocalStorage();
   }
 
 }
