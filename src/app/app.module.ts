@@ -10,7 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {UserModuleModule} from './userModule/user-module.module';
 import {AdminModuleModule} from './adminModule/admin-module.module';
 
+//Local Storage
 import {LogalStorageService} from './userModule/services/logal-storage.service';
+import {StorageServiceModule} from 'ngx-webstorage-service';
 
 //Landing Page
 import {LandingPageComponent} from './main_components/landing-page/landing-page.component';
@@ -48,7 +50,8 @@ import { IntegrantesLandingpageComponent } from './main_components/landing-page/
     BrowserAnimationsModule,
     UserModuleModule,
     AdminModuleModule,
-    FormsModule
+    FormsModule,
+    StorageServiceModule
 
 
 

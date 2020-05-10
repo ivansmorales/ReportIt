@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../../services/user.service';
-
+import { LogalStorageService } from '../../../services/logal-storage.service';
 import { User } from '../../../models/user';
 
 
@@ -14,18 +14,20 @@ export class FormRegisteruserComponent implements OnInit {
 
   userModel = new User();
 
+  usuarios;
 
-  constructor(private userService  : UserService) { }
+  constructor(private userService  : UserService, public localStorageService : LogalStorageService) { }
 
   ngOnInit(): void {
-    this.getUsers();
+    
+    this.localStorageService.storeOnLocalStorage(new User("P","P","P"));
+    this.localStorageService.readLocalStorage();
+
   }
 
 
   onSubmit(){
-    this.userService.addUser(this.userModel);
-    console.log("On submit: " + this.userModel );
-    console.log("getUsers: " + this.getUsers());
+    this.localStorageService.storeOnLocalStorage(this.userModel);
   }
 
   getUsers(){
@@ -33,5 +35,8 @@ export class FormRegisteruserComponent implements OnInit {
     console.log(this.userService.getUsers());
   }
 
- 
+  load(){
+    this.usuarios = this.localStorageService.readLocalStorage();
+  }
+
 }

@@ -14,12 +14,16 @@ import { UserRoutingModule } from './user-routing.module';
 import { HeaderLoginRegisterComponent } from './main-components/header-login-register/header-login-register.component';
 import { FooterLoginRegisterComponent } from './main-components/footer-login-register/footer-login-register.component';
 
+//Local storage
+import {StorageServiceModule} from 'ngx-webstorage-service';
+
 @NgModule({
   declarations: [RegisterUserComponent, LogInUserComponent, ReportsUserComponent, FormularioLogInComponent, FormRegisteruserComponent, HeaderLoginRegisterComponent, FooterLoginRegisterComponent],
   imports: [
     CommonModule,
     UserRoutingModule,
-    FormsModule
+    FormsModule,
+    StorageServiceModule
   ]
 })
 export class UserModuleModule { }

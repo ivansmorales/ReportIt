@@ -9,7 +9,7 @@
         <div class="container text-center">
             <form #userCreateForm="ngForm" (ngSubmit)="onSubmit()">
 
-                {{userModel | json}}
+                {{userCreateForm | json}}
 
                 <div class="form-group">
                     <label for="nombre">Nombre</label>

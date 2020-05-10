@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../userModule/services/user.service';
 import { User } from '../../userModule/models/user';
+import { LogalStorageService } from '../../userModule/services/logal-storage.service';
 
 @Component({
   selector: 'app-reports-admin',
@@ -16,7 +17,7 @@ export class ReportsAdminComponent implements OnInit {
   public divUsers : boolean = true;
   public divGraphs : boolean = true;
 
-  constructor(public userService : UserService) { }
+  constructor(public userService : UserService, public localStorageService : LogalStorageService) { }
 
   ngOnInit(): void {
     this.getUsers();
