@@ -22,10 +22,12 @@ export class ReportsComponent implements OnInit {
 
   }
 
-  
+  onSubmit(){
+    this.localStorageService.storeOnLocalStorageReports(this.reportModel);
+  }  
 
   ngOnInit(): void {
-    this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
+    //this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
   }
 
   

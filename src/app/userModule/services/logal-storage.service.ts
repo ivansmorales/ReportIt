@@ -9,6 +9,7 @@ import { Report } from '../models/report';
 export class LogalStorageService {
 
   public userList : User;
+  public reportList : Report;
 
   constructor(@Inject(LOCAL_STORAGE) private storage: StorageService) { }
 
@@ -28,6 +29,11 @@ export class LogalStorageService {
     const reportListStorage = this.storage.get('REPORT_LIST') || [];
     reportListStorage.push({ titulo : report.titulo, nombre : report.nombre,  fecha: new Date(), descripcion : report.descripcion, foto : report.foto, hora : new Date()});
     this.storage.set('REPORT_LIST', reportListStorage);
+    this.reportList = reportListStorage;
+  }
+
+  public readLocalStorageReports() : object{
+    return this.storage.get('REPORT_LIST');
   }
 
 }

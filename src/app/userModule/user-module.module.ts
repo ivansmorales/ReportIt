@@ -13,17 +13,19 @@ import { FormRegisteruserComponent } from './register-user/components/form-regis
 import { UserRoutingModule } from './user-routing.module';
 import { HeaderLoginRegisterComponent } from './main-components/header-login-register/header-login-register.component';
 import { FooterLoginRegisterComponent } from './main-components/footer-login-register/footer-login-register.component';
+import { ReportsComponent} from './reports/reports.component';
 
 //Local storage
 import {StorageServiceModule} from 'ngx-webstorage-service';
 
 @NgModule({
-  declarations: [RegisterUserComponent, LogInUserComponent, ReportsUserComponent, FormularioLogInComponent, FormRegisteruserComponent, HeaderLoginRegisterComponent, FooterLoginRegisterComponent],
+  declarations: [RegisterUserComponent, LogInUserComponent, ReportsComponent, ReportsUserComponent, FormularioLogInComponent, FormRegisteruserComponent, HeaderLoginRegisterComponent, FooterLoginRegisterComponent],
   imports: [
     CommonModule,
     UserRoutingModule,
     FormsModule,
     StorageServiceModule
+
   ]
 })
 export class UserModuleModule { }
