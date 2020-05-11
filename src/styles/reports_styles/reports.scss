@@ -79,7 +79,7 @@ body {
             min-height: 100%;
             height: 100%;
             padding-top: 2rem;
-            #crear {
+            #crear, #graficas {
                 background-color: white;
                 padding: 1rem;
                 margin-top: 3rem;
@@ -91,6 +91,9 @@ body {
                     font-weight: 600;
                     text-align: center;
                     margin: 1rem 0 0 0;
+                }
+                .center{
+                    margin: 0 auto;
                 }
                 .inside-container {
                     padding: 1rem;
@@ -154,6 +157,15 @@ body {
                 img {
                     width: 82%;
                     margin: 2rem 0rem 1rem 2rem;
+                }
+            }
+            #graficas{
+                h1 {
+                    color: $jungleg;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    text-align: center;
+                    margin: 1rem 0 0 0;
                 }
             }
         }

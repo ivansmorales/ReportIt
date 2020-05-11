@@ -13,6 +13,7 @@ export class GraphsAdminComponent implements OnInit {
   constructor() { }
 
 	ngOnInit() : void{
+
     
     let chart1 = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,

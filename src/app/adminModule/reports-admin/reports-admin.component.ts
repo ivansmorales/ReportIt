@@ -16,6 +16,8 @@ export class ReportsAdminComponent implements OnInit {
   public divValorado : boolean = true;
   public divUsers : boolean = true;
   public divGraphs : boolean = true;
+  public createGraphs : boolean = true;
+  public graphsAdmin : boolean = true;
 
   constructor(public userService : UserService, public localStorageService : LogalStorageService) { }
 
@@ -76,6 +78,14 @@ export class ReportsAdminComponent implements OnInit {
     this.divValorado = true;
     this.divUsers = true;
     this.divGraphs = false;
+  }
+
+  showGraphicsComp(){
+    this.graphsAdmin = !this.graphsAdmin;
+  }
+
+  showCreateGraphs(){
+    this.createGraphs = !this.createGraphs;
   }
 
 }
