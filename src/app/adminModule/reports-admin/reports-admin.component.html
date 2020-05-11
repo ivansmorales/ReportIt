@@ -192,15 +192,23 @@
                     </div>
                 </div>
             </div>
-            <div [hidden]="divGraphs" id="graficas" class="container">
-                <div class="report">
-                    <div class="row">
-                        <div class="col s6 col-img" style="width: 750px;">
-                            <app-graphs-admin></app-graphs-admin>
-                        </div>
+            <div [hidden]="divGraphs" id="graficas" class="container center">
+                    <h1>Gestión de estadísticas</h1>
+                    <br><br>
+                    <div class="btn center" (click)="showCreateGraphs()">
+                        <span>Crear gráficas</span>
                     </div>
-                </div>
-
+                    <div [hidden]="createGraphs">
+                        <app-create-graph></app-create-graph>
+                    </div>
+                    <br><br><br>
+                    <div class="btn" (click)="showGraphicsComp()">
+                        <span>Mostrar gráficas existentes</span>
+                    </div>
+                    <div [hidden]="graphsAdmin">
+                        <br><br>
+                        <app-graphs-admin></app-graphs-admin>
+                    </div>
             </div>
         </div>
 
