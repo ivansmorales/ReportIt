@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="h1Info" datatype="html">
+        <source>Acerca de</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pInfo" datatype="html">
+        <source>Desarrollo de una <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>aplicación web<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> que ofrecerá al usuario la posibilidad de reportar cualquier tipo de incidencia o queja que se considere moral y/o éticamente incorrecta, que haya vivido en cualquier momento de su día.
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h3Info" datatype="html">
+        <source>Fácil de reportar.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h32Info" datatype="html">
+        <source>Checar reportes.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p2Info" datatype="html">
+        <source>Puedes revisar los reportes más actualizados.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h33Info" datatype="html">
+        <source>Salva vidas.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p3Info" datatype="html">
+        <source>Salva vidas reportando a otras personas.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h1Message" datatype="html">
+        <source>Oh, no! Página no encontrada!.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/page-not-found/components/error-message/error-message.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h5Report" datatype="html">
+        <source>Report it</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p1carousel" datatype="html">
+        <source>Una nueva app que te permite reportar ilegalidades.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h5Carousel" datatype="html">
+        <source>Reporta incidencias en tu día a día.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p2Carousel" datatype="html">
+        <source>Ayuda a a las personas a estar enteradas sobre nuevos incidentes.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h5Carousel2" datatype="html">
+        <source>Obtén reportes diarios sobre incidentes en tu colonia.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p3Carousel" datatype="html">
+        <source>Mantente informada sobre las nuevas incidencias en la ciudad.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="41ada76252535a632219b680c25cebe9ccb3e16b" datatype="html">
+        <source>Anterior</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0ac5848d3ee8b22b4f286fbd661a0649e42fe5ca" datatype="html">
+        <source>Siguiente</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h1contacto" datatype="html">
+        <source>Contáctanos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pContacto" datatype="html">
+        <source> Puedes dejarnos un mensaje en la siguiente caja y nos pondremos en contacto contigo.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelContacto" datatype="html">
+        <source>Nombre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="label2Contacto" datatype="html">
+        <source>E-mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="label3Contacto" datatype="html">
+        <source>Título</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="label4Contacto" datatype="html">
+        <source>Mensaje</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h1In" datatype="html">
+        <source>Integrantes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/integrantes-landingpage/integrantes-landingpage.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pIn" datatype="html">
+        <source>Estudiantes de Ingeniería en Tecnologías Computacionales del Tecnológico de Monterrey que cursan la materia Desarrollo de Aplicaciones Web.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main_components/landing-page/components/integrantes-landingpage/integrantes-landingpage.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aReporte" datatype="html">
+        <source><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Inicio<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a2Reporte" datatype="html">
+        <source>Cerrar Sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a3Reporte" datatype="html">
+        <source>Inicio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a4Reporte" datatype="html">
+        <source>Cerrar sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a5Reporte" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Crear</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a6Reporte" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Reportes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a7Reporte" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Historial</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a8Reporte" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Valorado</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="liReporte" datatype="html">
+        <source>
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Crear
+                </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="li2Reporte" datatype="html">
+        <source>
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Reportes
+                </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="li3Reporte" datatype="html">
+        <source>
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Historial
+                </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="li4Reporte" datatype="html">
+        <source>
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Valorado
+                </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h12Reporte" datatype="html">
+        <source>Reporte de Incidencias</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labReporte" datatype="html">
+        <source>Título</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lab1Reporte" datatype="html">
+        <source>Nombre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lab3Reporte" datatype="html">
+        <source>Fecha</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lab4Reporte" datatype="html">
+        <source>Descripción del reporte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="spanReporte" datatype="html">
+        <source>Insertar foto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a0Reporte" datatype="html">
+        <source>Publicar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tdReporte" datatype="html">
+        <source>Nombre del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td2Reporte" datatype="html">
+        <source>Persona que lo reporta:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td3Reporte" datatype="html">
+        <source>Fecha del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="thReporte" datatype="html">
+        <source>Incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th2Reporte" datatype="html">
+        <source>Nombre del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th3Reporte" datatype="html">
+        <source>Persona que lo reporta:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th4Reporte" datatype="html">
+        <source>Fecha del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th5Reporte" datatype="html">
+        <source>Incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td9Reporte" datatype="html">
+        <source>Nombre del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td6Reporte" datatype="html">
+        <source>Persona que lo reporta:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td11Reporte" datatype="html">
+        <source>Fecha del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th7Reporte" datatype="html">
+        <source>Incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td12Reporte" datatype="html">
+        <source>Nombre del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td13Reporte" datatype="html">
+        <source>Persona que lo reporta:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td14Reporte" datatype="html">
+        <source>Fecha del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td15Reporte" datatype="html">
+        <source>Incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
+          <context context-type="linenumber">229</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h1Log" datatype="html">
+        <source>Iniciar Sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/log-in-user/components/formulario-log-in/formulario-log-in.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pLog" datatype="html">
+        <source>
+            ¿No tienes cuenta? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Regístrate<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/log-in-user/components/formulario-log-in/formulario-log-in.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labelLog" datatype="html">
+        <source>E-mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/log-in-user/components/formulario-log-in/formulario-log-in.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="label2Log" datatype="html">
+        <source>Contraseña</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/log-in-user/components/formulario-log-in/formulario-log-in.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p1Log" datatype="html">
+        <source>
+            ¿Ya tienes una cuenta?<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Inicia sesión<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labReg" datatype="html">
+        <source>Nombre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lab2Reg" datatype="html">
+        <source>E-mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lab3Reg" datatype="html">
+        <source>Contraseña</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f85dc01e7aab1a5c282d14b74650255ae4042fe0" datatype="html">
+        <source>E-mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/login-admin/components/form-login/form-login.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e369e13629132e32dcd958b82261059243f21d58" datatype="html">
+        <source>Contraseña</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/login-admin/components/form-login/form-login.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

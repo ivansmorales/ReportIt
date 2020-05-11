@@ -5,8 +5,8 @@
                 <img src="assets/img/logo.png" alt="" width="150" height="70">
             </a>
             <ul class="right hide-on-med-and-down">
-                <li (click)="verCrear()"><a>Inicio</a></li>
-                <li><a href="">Cerrar Sesión</a></li>
+                <li (click)="verCrear()" i18n ="@@aReporte"><a>Inicio</a></li>
+                <li><a href="" i18n ="@@a2Reporte">Cerrar Sesión</a></li>
             </ul>
             <ul id="slide-out" class="sidenav">
                 <li>
@@ -15,17 +15,17 @@
                 <li>
                     <div class="divider"></div>
                 </li>
-                <li><a class="waves-effect" >Inicio</a></li>
-                <li><a class="waves-effect" href="login.html">Cerrar sesión</a></li>
+                <li><a class="waves-effect" i18n ="@@a3Reporte">Inicio</a></li>
+                <li><a class="waves-effect" href="login.html" i18n ="@@a4Reporte">Cerrar sesión</a></li>
                 <li>
                     <a class="subheader"></a>
                 </li>
-                <li (click)="verCrear()"><a class="sidenav-close" ><i class="far fa-newspaper"></i>Crear</a></li>
-                <li (click)="verReportes()"><a class="sidenav-close"><i class="fas fa-comment-alt"></i>Reportes</a>
+                <li (click)="verCrear()"><a class="sidenav-close" i18n ="@@a5Reporte"><i class="far fa-newspaper"></i>Crear</a></li>
+                <li (click)="verReportes()"><a class="sidenav-close" i18n ="@@a6Reporte"><i class="fas fa-comment-alt"></i>Reportes</a>
                 </li>
-                <li (click)="verHistorial()"><a class="sidenav-close" ><i class="fas fa-history"></i>Historial</a>
+                <li (click)="verHistorial()"><a class="sidenav-close" i18n ="@@a7Reporte"><i class="fas fa-history"></i>Historial</a>
                 </li>
-                <li (click)="verValorado()"><a class="sidenav-close" ><i class="fas fa-star"></i>Valorado</a></li>
+                <li (click)="verValorado()"><a class="sidenav-close" i18n ="@@a8Reporte"><i class="fas fa-star"></i>Valorado</a></li>
             </ul>
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
         </div>
@@ -44,16 +44,16 @@
         -->
         <aside id="left-sidebar-nav">
             <ul id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y" style="width: 240px; left: -250px;">
-                <li (click)="verCrear()" class="li-sidebar">
+                <li (click)="verCrear()" class="li-sidebar" i18n ="@@liReporte">
                     <i class="far fa-newspaper"></i> Crear
                 </li>
-                <li (click)="verReportes()" class="li-sidebar">
+                <li (click)="verReportes()" class="li-sidebar" i18n ="@@li2Reporte">
                     <i class="fas fa-comment-alt"></i> Reportes
                 </li>
-                <li (click)="verHistorial()" class="li-sidebar">
+                <li (click)="verHistorial()" class="li-sidebar" i18n ="@@li3Reporte">
                     <i class="fas fa-history"></i> Historial
                 </li>
-                <li (click)="verValorado()" class="li-sidebar">
+                <li (click)="verValorado()" class="li-sidebar" i18n ="@@li4Reporte">
                     <i class="fas fa-star"></i> Valorado
                 </li>
             </ul>
@@ -62,39 +62,39 @@
 
         <div class="col s10 righty">
             <div [hidden]="divCrear" id="crear" class="container">
-                <h1>Reporte de Incidencias</h1>
+                <h1 i18n ="@@h12Reporte">Reporte de Incidencias</h1>
                 <div class="row inside-container">
                     <form class="col s12" reportCreateForm="ngform">
                         <div class="row row-input">
                             <div class="input-field col s12">
                               <!-- <input id="title" name ="titulo" type="text" class="validate form-control"> --> 
                               <input id="titulo" name = "firstname" type="text" class="validate form-control" [(ngModel)]="reportModel.titulo">  
-                              <label for="titulo">Título</label>
+                              <label for="titulo" i18n ="@@labReporte">Título</label>
                             </div>
                         </div>
                         <div class="row row-input">
                             <div class="input-field col s6">
                                 <input id="first_name" name = "firstname" type="text" class="validate form-control" [(ngModel)]="reportModel.nombre" >
-                                <label for="first_name">Nombre</label>
+                                <label for="first_name" i18n ="@@lab1Reporte">Nombre</label>
                             </div>
                             <div class="input-field col s6">
                                 <input id="last_name" name ="fecha" type="text" class="validate form-control" [(ngModel)]="reportModel.fecha">
-                                <label for="last_name">Fecha</label>
+                                <label for="last_name" i18n ="@@lab3Reporte">Fecha</label>
                             </div>
                         </div>
                         <div class="row row-input">
                             <div class="input-field col s6">
                                 <textarea id="textarea1" name = "descripcion" class="materialize-textarea form-control" [(ngModel)]="reportModel.descripcion"></textarea>
-                                <label for="textarea1">Descripción del reporte</label>
+                                <label for="textarea1" i18n ="@@lab4Reporte">Descripción del reporte</label>
                             </div>
                             <div class="input-field col s6">
                                 <div class="btn">
-                                    <span>Insertar foto</span>
+                                    <span i18n ="@@spanReporte">Insertar foto</span>
                                 </div>
                             </div>
                         </div>
                         <div class="center-align">
-                            <a class="waves-effect waves-light btn-small " (click)="onSubmit()" >Publicar</a>
+                            <a class="waves-effect waves-light btn-small " (click)="onSubmit()" i18n ="@@a0Reporte">Publicar</a>
                         </div>
                     </form>
                 </div>
@@ -108,20 +108,20 @@
                         <div class="col s6 col-data">
                             <table>
                                 <tr>
-                                    <td class="description">Nombre del incidente:</td>
+                                    <td class="description" i18n ="@@tdReporte">Nombre del incidente:</td>
                                     <td class="data">Auto mal estacionado</td>
                                 </tr>
                                 <tr>
-                                    <td class="description">Persona que lo reporta:</td>
+                                    <td class="description" i18n ="@@td2Reporte">Persona que lo reporta:</td>
                                     <td class="data">Diego Moreno</td>
                                 </tr>
                                 <tr>
-                                    <th class="description">Fecha del incidente:</th>
+                                    <th class="description" i18n ="@@td3Reporte">Fecha del incidente:</th>
                                     <th class="data">12/02/2020</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Incidente:</th>
-                                    <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
+                                    <th class="description" i18n ="@@thReporte">Incidente:</th>
+                                    <th class="data" >En la calle Prolongación Miramontes hay un auto mal estacionado.
                                     </th>
                                 </tr>
                             </table>
@@ -142,19 +142,19 @@
                         <div class="col s6 col-data">
                             <table>
                                 <tr>
-                                    <th class="description">Nombre del incidente:</th>
+                                    <th class="description" i18n ="@@th2Reporte">Nombre del incidente:</th>
                                     <th class="data">Bache</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Persona que lo reporta:</th>
+                                    <th class="description" i18n ="@@th3Reporte">Persona que lo reporta:</th>
                                     <th class="data">Ivan Morales</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Fecha del incidente:</th>
+                                    <th class="description" i18n ="@@th4Reporte">Fecha del incidente:</th>
                                     <th class="data">13/02/2020</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Incidente:</th>
+                                    <th class="description" i18n ="@@th5Reporte">Incidente:</th>
                                     <th class="data">En la calle Prolongación Miramontes hay un bache.</th>
                                 </tr>
                             </table>
@@ -181,19 +181,19 @@
 
                             <table>
                                 <tr>
-                                    <td class="description">Nombre del incidente:</td>
+                                    <td class="description" i18n ="@@td9Reporte">Nombre del incidente:</td>
                                     <td class="data">Accidente</td>
                                 </tr>
                                 <tr>
-                                    <td class="description">Persona que lo reporta:</td>
+                                    <td class="description" i18n ="@@td6Reporte">Persona que lo reporta:</td>
                                     <td class="data">Diego Moreno</td>
                                 </tr>
                                 <tr>
-                                    <th class="description">Fecha del incidente:</th>
+                                    <th class="description" i18n ="@@td11Reporte">Fecha del incidente:</th>
                                     <th class="data">02/02/2020</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Incidente:</th>
+                                    <th class="description" i18n ="@@th7Reporte">Incidente:</th>
                                     <th class="data">Choque de dos autos en la Mexico-Cuernavaca</th>
                                 </tr>
                             </table>
@@ -214,19 +214,19 @@
 
                             <table>
                                 <tr>
-                                    <td class="description">Nombre del incidente:</td>
+                                    <td class="description" i18n ="@@td12Reporte">Nombre del incidente:</td>
                                     <td class="data">Auto mal estacionado</td>
                                 </tr>
                                 <tr>
-                                    <td class="description">Persona que lo reporta:</td>
+                                    <td class="description" i18n ="@@td13Reporte">Persona que lo reporta:</td>
                                     <td class="data">Diego Moreno</td>
                                 </tr>
                                 <tr>
-                                    <th class="description">Fecha del incidente:</th>
+                                    <th class="description" i18n ="@@td14Reporte">Fecha del incidente:</th>
                                     <th class="data">12/02/2020</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Incidente:</th>
+                                    <th class="description" i18n ="@@td15Reporte">Incidente:</th>
                                     <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
                                     </th>
                                 </tr>

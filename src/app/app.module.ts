@@ -5,7 +5,6 @@ import { FormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 //Modulos
 import {UserModuleModule} from './userModule/user-module.module';
 import {AdminModuleModule} from './adminModule/admin-module.module';
@@ -27,6 +26,13 @@ import { ErrorMessageComponent } from './main_components/page-not-found/componen
 import { CarouselLandingpageComponent } from './main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component';
 import { ContactoLangingpageComponent } from './main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component';
 import { IntegrantesLandingpageComponent } from './main_components/landing-page/components/integrantes-landingpage/integrantes-landingpage.component';
+
+import { registerLocaleData } from '@angular/common';
+import localeMx from '@angular/common/locales/es-MX';
+import localeUS from '@angular/common/locales/en';
+
+registerLocaleData(localeMx, 'es-MX');
+registerLocaleData(localeUS, 'en'); 
 
 
 @NgModule({
@@ -51,9 +57,7 @@ import { IntegrantesLandingpageComponent } from './main_components/landing-page/
     UserModuleModule,
     AdminModuleModule,
     FormsModule,
-    StorageServiceModule
-
-
+    StorageServiceModule,
 
   ],
   providers: [],
