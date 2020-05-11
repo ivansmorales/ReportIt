@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../userModule/services/user.service';
 import { User } from '../../userModule/models/user';
 import { LogalStorageService } from '../../userModule/services/logal-storage.service';
-
+import { Report} from '../../userModule/models/report';
 @Component({
   selector: 'app-reports-admin',
   templateUrl: './reports-admin.component.html',
@@ -24,6 +24,7 @@ export class ReportsAdminComponent implements OnInit {
   ngOnInit(): void {
     //this.getUsers();
     //this.localStorageService.readLocalStorage();
+    //this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
   }
 
   /*

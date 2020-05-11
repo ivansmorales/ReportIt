@@ -13,6 +13,7 @@ import { GraphsAdminComponent } from './reports-admin/components/graphs-admin/gr
 
 
 
+
 @NgModule({
   declarations: [LoginAdminComponent, FormLoginComponent, HeaderAdminComponent, ReportsAdminComponent, FooterAdminComponent, HeaderLoginComponent, GraphsAdminComponent],
   imports: [
