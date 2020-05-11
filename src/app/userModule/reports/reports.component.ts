@@ -1,12 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { Report } from '../models/report';
 import { LogalStorageService } from '../services/logal-storage.service';
 
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-reports',
   templateUrl: './reports.component.html',
-  styleUrls: ['./reports.component.scss']
+  styleUrls: ['./reports.component.scss'],
+  animations: [
+    trigger('fade', [ 
+      transition('void => *', [
+        style({ opacity: 0 }), 
+        animate(500, style({opacity: 1}))
+      ]) 
+    ]),
+    trigger('fade1', [ 
+      transition('void => *', [
+        style({ opacity: 0 }), 
+        animate(1000, style({opacity: 1}))
+      ]) 
+    ]),
+    trigger('fade2', [ 
+      transition('void => *', [
+        style({ opacity: 0 }), 
+        animate(1500, style({opacity: 1}))
+      ]) 
+    ]),
+  ]
 })
 export class ReportsComponent implements OnInit {
 
@@ -17,8 +38,6 @@ export class ReportsComponent implements OnInit {
   public reportModel = new Report();
 
   constructor(public localStorageService : LogalStorageService) {
-    
-
 
   }
 
@@ -29,8 +48,6 @@ export class ReportsComponent implements OnInit {
   ngOnInit(): void {
     //this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
   }
-
-  
 
   verCrear(){
     this.divCrear = false;
@@ -59,5 +76,6 @@ export class ReportsComponent implements OnInit {
     this.divHistorial = true;
     this.divValorado = false;
   }
+
 
 }
