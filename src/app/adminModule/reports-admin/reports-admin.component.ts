@@ -7,7 +7,7 @@ import { Report} from '../../userModule/models/report';
   selector: 'app-reports-admin',
   templateUrl: './reports-admin.component.html',
   styleUrls: ['./reports-admin.component.scss'],
-  providers: [UserService]
+  providers: [UserService],
 })
 export class ReportsAdminComponent implements OnInit {
 
@@ -84,8 +84,10 @@ export class ReportsAdminComponent implements OnInit {
     this.graphsAdmin = !this.graphsAdmin;
   }
 
+
   showCreateGraphs(){
     this.createGraphs = !this.createGraphs;
   }
 
 }
+

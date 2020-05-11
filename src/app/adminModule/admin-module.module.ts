@@ -10,12 +10,13 @@ import {ReportsAdminComponent} from './reports-admin/reports-admin.component';
 import { FooterAdminComponent } from './main-components/footer-admin/footer-admin.component';
 import { HeaderLoginComponent } from './main-components/header-login/header-login.component';
 import { GraphsAdminComponent } from './reports-admin/components/graphs-admin/graphs-admin.component';
+import { CreateGraphComponent } from './reports-admin/components/create-graph/create-graph.component';
 
 
 
 
 @NgModule({
-  declarations: [LoginAdminComponent, FormLoginComponent, HeaderAdminComponent, ReportsAdminComponent, FooterAdminComponent, HeaderLoginComponent, GraphsAdminComponent],
+  declarations: [LoginAdminComponent, FormLoginComponent, HeaderAdminComponent, ReportsAdminComponent, FooterAdminComponent, HeaderLoginComponent, GraphsAdminComponent, CreateGraphComponent],
   imports: [
     CommonModule,
     AdminRoutingModule

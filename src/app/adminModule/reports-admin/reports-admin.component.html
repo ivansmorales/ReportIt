@@ -199,34 +199,7 @@
                         <span>Crear gráficas</span>
                     </div>
                     <div [hidden]="createGraphs">
-                        <div class="row inside-container">
-                            <form class="col s12">
-                                <div class="row row-input">
-                                    <div class="input-field col s6">
-                                      <input placeholder="ID de seguridad" id="security_id" type="text" class="validate">
-                                    </div>
-                                    <div class="input-field col s6">
-                                      <input placeholder="Año de la gráfica" id="year" type="text" class="validate">
-                                    </div>
-                                </div>
-                                <div class="row row-input">
-                                    <div class="input-field col s6">
-                                        <input placeholder="Nombre de la gráfuca" id="graph_name" type="text" class="validate">
-                                    </div>
-                                </div>
-                                <div class="row row-input">
-                                    <div class="input-field col s6">
-                                      <input placeholder="Valor en posición x" id="x_value" type="text" class="validate">
-                                    </div>
-                                    <div class="input-field col s6">
-                                      <input placeholder="Valor en la posición y" id="y_value" type="text" class="validate">
-                                    </div>
-                                </div>
-                                <div class="center-align">
-                                    <a class="waves-effect waves-light btn-small ">Crear gráfica</a>
-                                </div>
-                            </form>
-                        </div>
+                        <app-create-graph></app-create-graph>
                     </div>
                     <br><br><br>
                     <div class="btn" (click)="showGraphicsComp()">
