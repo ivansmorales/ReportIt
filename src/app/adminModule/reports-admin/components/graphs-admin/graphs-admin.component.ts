@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LogalStorageService} from '../../../../userModule/services/logal-storage.service';
 
 //import * as CanvasJS from 'node_modules/canvasjs/dist/canvasjs.min.js';
 import * as CanvasJS from 'src/assets/canvasjs.min.js';
@@ -10,10 +11,13 @@ import * as CanvasJS from 'src/assets/canvasjs.min.js';
 })
 export class GraphsAdminComponent implements OnInit {
 
-  constructor() { }
+  graph;
+
+  constructor(public localStorageService : LogalStorageService) { }
 
 	ngOnInit() : void{
-
+    
+    this.graph = this.localStorageService.readLocalStorageAdmin();
     
     let chart1 = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
