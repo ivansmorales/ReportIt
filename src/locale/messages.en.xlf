@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="h1Info" datatype="html">
         <source>Acerca de</source>
-        <target>About</target>
+        <target> About </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
           <context context-type="linenumber">2</context>
@@ -12,8 +12,7 @@
       </trans-unit>
       <trans-unit id="pInfo" datatype="html">
         <source>Desarrollo de una <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>aplicación web<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> que ofrecerá al usuario la posibilidad de reportar cualquier tipo de incidencia o queja que se considere moral y/o éticamente incorrecta, que haya vivido en cualquier momento de su día.
-    </source>
-    <target> Development of a web application that will offer the user the possibility of reporting any type of incident or complaint that is considered morally and / or ethically incorrect, that has occurred at any time of their day. </target>
+    </source> <target> Development of a web application that will offer the user the possibility of reporting any type of incident or complaint that is considered morally and / or ethically incorrect, that has occurred at any time of their day.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
           <context context-type="linenumber">3</context>
@@ -25,7 +24,7 @@
       </trans-unit>
       <trans-unit id="h3Info" datatype="html">
         <source>Fácil de reportar.</source>
-        <target> Easy to report  </target>
+        <target> Easy to report </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
           <context context-type="linenumber">9</context>
@@ -33,7 +32,7 @@
       </trans-unit>
       <trans-unit id="h32Info" datatype="html">
         <source>Checar reportes.</source>
-        <target> Check reports. </target>
+        <target> Check reports </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
           <context context-type="linenumber">15</context>
@@ -41,7 +40,7 @@
       </trans-unit>
       <trans-unit id="p2Info" datatype="html">
         <source>Puedes revisar los reportes más actualizados.</source>
-        <target> You can check the most updated reports.</target>
+        <target> You can check the most updated reports </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
           <context context-type="linenumber">16</context>
@@ -49,7 +48,7 @@
       </trans-unit>
       <trans-unit id="h33Info" datatype="html">
         <source>Salva vidas.</source>
-        <target> Save lives </target>
+        <target> Save lives.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
           <context context-type="linenumber">21</context>
@@ -57,7 +56,7 @@
       </trans-unit>
       <trans-unit id="p3Info" datatype="html">
         <source>Salva vidas reportando a otras personas.</source>
-        <target> Save lives by reporting to other people.</target>
+        <target>Save lives by reporting to other people. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/info-landing-page/info-landing-page.component.html</context>
           <context context-type="linenumber">22</context>
@@ -65,7 +64,7 @@
       </trans-unit>
       <trans-unit id="h1Message" datatype="html">
         <source>Oh, no! Página no encontrada!.</source>
-        <target>  Oh no! Page not found!</target>
+        <target> Oh no! Page not found!. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/page-not-found/components/error-message/error-message.component.html</context>
           <context context-type="linenumber">4</context>
@@ -73,6 +72,7 @@
       </trans-unit>
       <trans-unit id="h5Report" datatype="html">
         <source>Report it</source>
+        <target> Report It</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
           <context context-type="linenumber">11</context>
@@ -88,7 +88,7 @@
       </trans-unit>
       <trans-unit id="h5Carousel" datatype="html">
         <source>Reporta incidencias en tu día a día.</source>
-        <target> Report incidents in your day to day.</target>
+        <target>Report incidents in your day to day. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
           <context context-type="linenumber">17</context>
@@ -104,7 +104,7 @@
       </trans-unit>
       <trans-unit id="h5Carousel2" datatype="html">
         <source>Obtén reportes diarios sobre incidentes en tu colonia.</source>
-        <target> Get daily reports on incidents in your neighborhood.</target>
+        <target>Get daily reports on incidents in your neighborhood. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
           <context context-type="linenumber">23</context>
@@ -112,7 +112,7 @@
       </trans-unit>
       <trans-unit id="p3Carousel" datatype="html">
         <source>Mantente informada sobre las nuevas incidencias en la ciudad.</source>
-        <target> Stay informed about new incidents in the city.</target>
+        <target> Stay informed about new incidents in the city. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
           <context context-type="linenumber">24</context>
@@ -128,7 +128,7 @@
       </trans-unit>
       <trans-unit id="0ac5848d3ee8b22b4f286fbd661a0649e42fe5ca" datatype="html">
         <source>Siguiente</source>
-        <target> Next </target>
+        <target>Next </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component.html</context>
           <context context-type="linenumber">34</context>
@@ -144,7 +144,7 @@
       </trans-unit>
       <trans-unit id="pContacto" datatype="html">
         <source> Puedes dejarnos un mensaje en la siguiente caja y nos pondremos en contacto contigo.</source>
-        <target> You can leave us a message in the following box and we will contact you.</target>
+         <target>You can leave us a message in the following box and we will contact you </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
           <context context-type="linenumber">5</context>
@@ -160,7 +160,7 @@
       </trans-unit>
       <trans-unit id="label2Contacto" datatype="html">
         <source>E-mail</source>
-        <target> E-mail. </target>
+         <target> E-mail </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
           <context context-type="linenumber">16</context>
@@ -168,8 +168,7 @@
       </trans-unit>
       <trans-unit id="label3Contacto" datatype="html">
         <source>Título</source>
-        <target> Title </target>
-
+         <target> Title </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
           <context context-type="linenumber">21</context>
@@ -177,7 +176,7 @@
       </trans-unit>
       <trans-unit id="label4Contacto" datatype="html">
         <source>Mensaje</source>
-        <target> Message </target>
+         <target> Message </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/contacto-langingpage/contacto-langingpage.component.html</context>
           <context context-type="linenumber">25</context>
@@ -185,7 +184,7 @@
       </trans-unit>
       <trans-unit id="h1In" datatype="html">
         <source>Integrantes</source>
-        <target> Collaborators </target>
+         <target> Collaborators </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/integrantes-landingpage/integrantes-landingpage.component.html</context>
           <context context-type="linenumber">2</context>
@@ -193,14 +192,14 @@
       </trans-unit>
       <trans-unit id="pIn" datatype="html">
         <source>Estudiantes de Ingeniería en Tecnologías Computacionales del Tecnológico de Monterrey que cursan la materia Desarrollo de Aplicaciones Web.</source>
-        <target> Computer Technology Engineering students at the Tecnológico de Monterrey taking the course Web Application Development.</target>
+         <target> Engineering Students in Computational Technologies from the Tecnológico de Monterrey taking the course Web Application Development </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/main_components/landing-page/components/integrantes-landingpage/integrantes-landingpage.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aReporte" datatype="html">
-        <source><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Inicio<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <source><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Inicio<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source> <target> Home </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">8</context>
@@ -208,6 +207,7 @@
       </trans-unit>
       <trans-unit id="a2Reporte" datatype="html">
         <source>Cerrar Sesión</source>
+        <target> Log Out </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">9</context>
@@ -215,6 +215,7 @@
       </trans-unit>
       <trans-unit id="a3Reporte" datatype="html">
         <source>Inicio</source>
+        <target> Log in </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">18</context>
@@ -222,34 +223,39 @@
       </trans-unit>
       <trans-unit id="a4Reporte" datatype="html">
         <source>Cerrar sesión</source>
+        <target> Log Out </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a5Reporte" datatype="html">
-        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Crear</source> <target> Create </target>
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Crear</source>
+        <target> Create </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a6Reporte" datatype="html">
-        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Reportes</source> <target> Reports </target>
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Reportes</source>
+        <target> Reports </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a7Reporte" datatype="html">
-        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Historial</source> <traget> History  </target>
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Historial</source>
+        <target> History </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a8Reporte" datatype="html">
-        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Valorado</source> <target> Rated </target>
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Valorado</source>
+        <target> Rated </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">28</context>
@@ -257,7 +263,7 @@
       </trans-unit>
       <trans-unit id="liReporte" datatype="html">
         <source>
-                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Crear 
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Crear
                 </source> <target> Create </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
@@ -276,7 +282,7 @@
       <trans-unit id="li3Reporte" datatype="html">
         <source>
                     <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Historial
-                </source> <target> History  </target>
+                </source> <target> History </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">53</context>
@@ -292,8 +298,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="h12Reporte" datatype="html">
-        <source></source>
-        <target>Incident Report </target>
+        <source>Reporte de Incidencias</source>
+        <target> Incident Report </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">65</context>
@@ -317,7 +323,7 @@
       </trans-unit>
       <trans-unit id="lab3Reporte" datatype="html">
         <source>Fecha</source>
-        <target> Date  </target>
+        <target> Date </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">82</context>
@@ -325,7 +331,7 @@
       </trans-unit>
       <trans-unit id="lab4Reporte" datatype="html">
         <source>Descripción del reporte</source>
-        <target> Report description </target>
+        <target> Report Description </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">88</context>
@@ -333,7 +339,7 @@
       </trans-unit>
       <trans-unit id="9e5b3a7d49e13b9c9851ee386dd2b4d5c3dee457" datatype="html">
         <source>Insertar foto</source>
-        <target>Insert photo </target>
+        <target> Photo </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">92</context>
@@ -353,7 +359,7 @@
       </trans-unit>
       <trans-unit id="tdReporte" datatype="html">
         <source>Nombre del incidente:</source>
-        <target> Incident name: </target>
+        <target> Incident Name</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">111</context>
@@ -361,7 +367,7 @@
       </trans-unit>
       <trans-unit id="td2Reporte" datatype="html">
         <source>Persona que lo reporta:</source>
-        <target>Reporting person: </target>
+        <target> Person who reports it </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">115</context>
@@ -369,7 +375,7 @@
       </trans-unit>
       <trans-unit id="td3Reporte" datatype="html">
         <source>Fecha del incidente:</source>
-        <target> Date of incident:</target>
+        <target> Incident Date </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">119</context>
@@ -385,7 +391,7 @@
       </trans-unit>
       <trans-unit id="th2Reporte" datatype="html">
         <source>Nombre del incidente:</source>
-        <target>Name of the incident  </target>
+        <target> Incident Name </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">145</context>
@@ -401,7 +407,7 @@
       </trans-unit>
       <trans-unit id="th4Reporte" datatype="html">
         <source>Fecha del incidente:</source>
-        <target>  Date of incident </target>
+        <target> Incident Date</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">153</context>
@@ -417,7 +423,7 @@
       </trans-unit>
       <trans-unit id="td9Reporte" datatype="html">
         <source>Nombre del incidente:</source>
-        <target> Client name </target>
+        <target> Incident name </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">184</context>
@@ -425,7 +431,7 @@
       </trans-unit>
       <trans-unit id="td6Reporte" datatype="html">
         <source>Persona que lo reporta:</source>
-        <target> Name of the person who reports it </target>
+        <target> Person who reports it </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">188</context>
@@ -449,7 +455,7 @@
       </trans-unit>
       <trans-unit id="td12Reporte" datatype="html">
         <source>Nombre del incidente:</source>
-        <target> Name of the incident </target>
+        <target> Incident Name </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">217</context>
@@ -457,7 +463,7 @@
       </trans-unit>
       <trans-unit id="td13Reporte" datatype="html">
         <source>Persona que lo reporta:</source>
-        <target> Person who reports it  </target>
+        <target> Person who reports it </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">221</context>
@@ -465,7 +471,7 @@
       </trans-unit>
       <trans-unit id="td14Reporte" datatype="html">
         <source>Fecha del incidente:</source>
-        <target> Incident date </target>
+        <target> Incident Name </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">225</context>
@@ -481,7 +487,7 @@
       </trans-unit>
       <trans-unit id="h1Log" datatype="html">
         <source>Iniciar Sesión</source>
-        <target> Log in </target>
+        <target> Login </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/log-in-user/components/formulario-log-in/formulario-log-in.component.html</context>
           <context context-type="linenumber">3</context>
@@ -493,7 +499,7 @@
       </trans-unit>
       <trans-unit id="labelLog" datatype="html">
         <source>E-mail</source>
-        <target> e-mail </target>
+        <target> EMAIL </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/log-in-user/components/formulario-log-in/formulario-log-in.component.html</context>
           <context context-type="linenumber">12</context>
@@ -501,7 +507,7 @@
       </trans-unit>
       <trans-unit id="label2Log" datatype="html">
         <source>Contraseña</source>
-        <target> Password </target>
+        <target> Password</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/log-in-user/components/formulario-log-in/formulario-log-in.component.html</context>
           <context context-type="linenumber">18</context>
@@ -525,7 +531,7 @@
       </trans-unit>
       <trans-unit id="lab2Reg" datatype="html">
         <source>E-mail</source>
-        <target> e-mail </target>
+        <target> EMAIL </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
           <context context-type="linenumber">19</context>
@@ -533,7 +539,7 @@
       </trans-unit>
       <trans-unit id="f85dc01e7aab1a5c282d14b74650255ae4042fe0" datatype="html">
         <source>E-mail</source>
-        <target> e-mail </target>
+        <target>EMAIL </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
           <context context-type="linenumber">20</context>
@@ -545,7 +551,7 @@
       </trans-unit>
       <trans-unit id="lab3Reg" datatype="html">
         <source>Contraseña</source>
-        <target> Password </target>
+        <target> PASSWORD</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
           <context context-type="linenumber">25</context>
@@ -553,7 +559,7 @@
       </trans-unit>
       <trans-unit id="e369e13629132e32dcd958b82261059243f21d58" datatype="html">
         <source>Contraseña</source>
-        <target> Passord </target>
+        <target> PASSWORD</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
           <context context-type="linenumber">26</context>
@@ -565,7 +571,7 @@
       </trans-unit>
       <trans-unit id="412209b9cfe738093946bc2706ff80c1ae5cab02" datatype="html">
         <source>Regístrate</source>
-        <target> Sign up </target>
+        <target> SIGN UP</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
           <context context-type="linenumber">31</context>
@@ -573,7 +579,7 @@
       </trans-unit>
       <trans-unit id="3710e76def6dfb9b54d9edddc2033268bcb06b99" datatype="html">
         <source>Regístrate con Twitter</source>
-        <target> Sign up with Twitter </target>
+        <target> Sign Up with Twitter</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
           <context context-type="linenumber">35</context>
@@ -581,7 +587,7 @@
       </trans-unit>
       <trans-unit id="h1log" datatype="html">
         <source>Iniciar Sesión</source>
-        <target> Log in </target>
+        <target> Log In </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/login-admin/components/form-login/form-login.component.html</context>
           <context context-type="linenumber">3</context>
@@ -613,7 +619,7 @@
       </trans-unit>
       <trans-unit id="p1Out" datatype="html">
         <source>&gt;Inicio </source>
-        <target> Home  </target>
+        <target>Home  </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">18</context>
@@ -654,7 +660,7 @@
       <trans-unit id="p7Out" datatype="html">
         <source>
                     <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>  Reportes 
-                </source> <target>Reports  </target>
+                </source> <target> Reports </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">44</context>
@@ -663,7 +669,7 @@
       <trans-unit id="p8Out" datatype="html">
         <source>
                     <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>     Editar 
-                </source><target> Edit </target>
+                </source> <target> Edit </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">47</context>
@@ -672,7 +678,7 @@
       <trans-unit id="p9Out" datatype="html">
         <source>
                     <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Valorado
-                </source> <target>Rated  </target>
+                </source> <target> Rated </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">50</context>
@@ -707,7 +713,7 @@
       </trans-unit>
       <trans-unit id="lab1Out" datatype="html">
         <source>Título</source>
-        <target> Title </target>
+        <target>Title  </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">71</context>
@@ -731,7 +737,7 @@
       </trans-unit>
       <trans-unit id="lab4Out" datatype="html">
         <source>Descripción del reporte</source>
-        <target> Report description </target>
+        <target> Report Description </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">87</context>
@@ -747,7 +753,7 @@
       </trans-unit>
       <trans-unit id="p16Out" datatype="html">
         <source> Descargar </source>
-        <target> Download </target>
+        <target> Downloads</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">104</context>
@@ -755,7 +761,7 @@
       </trans-unit>
       <trans-unit id="td1Out" datatype="html">
         <source>Nombre del incidente:</source>
-        <target> Incidents Name </target>
+        <target> Incident Name </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">114</context>
@@ -791,7 +797,7 @@
       </trans-unit>
       <trans-unit id="th3Out" datatype="html">
         <source>Nombre del incidente:</source>
-        <target> Name of the incident </target>
+        <target> Incident Name </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">142</context>
@@ -831,7 +837,7 @@
       </trans-unit>
       <trans-unit id="th11Out" datatype="html">
         <source>Correo</source>
-        <target> Mail </target>
+        <target> MAIL</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">181</context>
@@ -847,7 +853,7 @@
       </trans-unit>
       <trans-unit id="h180Out" datatype="html">
         <source>Gestión de estadísticas</source>
-        <target> Statis managment</target>
+        <target> Statics Managment</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">197</context>
@@ -855,6 +861,7 @@
       </trans-unit>
       <trans-unit id="64ef3c9e8b7f8e4956dfc824adf061fb261b0d4e" datatype="html">
         <source>Crear gráficas</source>
+        <target> Create graphics </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">200</context>
@@ -862,7 +869,7 @@
       </trans-unit>
       <trans-unit id="84fa357a22129c5ece9e04bdf135e05cb1b9368e" datatype="html">
         <source>Mostrar gráficas existentes</source>
-        <target> Show existen graphics </target>
+        <target> Show existent graphics </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
           <context context-type="linenumber">207</context>
@@ -870,7 +877,7 @@
       </trans-unit>
       <trans-unit id="014a376defb6071655dd3230b2f4e1e03dac45d0" datatype="html">
         <source>Id de seguridad, eg. 10283</source>
-        <target>  Security ID, ex. 10283 </target>
+        <target> Security ID, ex. 10283</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
           <context context-type="linenumber">5</context>
@@ -878,15 +885,15 @@
       </trans-unit>
       <trans-unit id="34a960b96a3ed52b83463b709162548af5716189" datatype="html">
         <source>Año de la gráfica, eg.2020</source>
-        <target> Year of the graphic, ex. 2020 </target>
+        <target> Graphics year, ex. 2020</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="edc980a2df338a04ee6bb9e22bba84b263a82246" datatype="html">
-        <source>Nombre de la gráfica</source>
-        <target> Graphics name </target>
+        <source>Nombre de la gráfuca</source>
+        <target> Graphics Name</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
           <context context-type="linenumber">13</context>
@@ -894,7 +901,7 @@
       </trans-unit>
       <trans-unit id="410ea38ce4719ec3734d15adbca740ea09310488" datatype="html">
         <source>Datos a agregar (numero)</source>
-        <target> New data (number) </target>
+        <target> New Data (number)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
           <context context-type="linenumber">18</context>
@@ -902,7 +909,7 @@
       </trans-unit>
       <trans-unit id="pCreate" datatype="html">
         <source>Generar campos</source>
-        <target> Generate fields </target>
+        <target> Generate Fields</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
           <context context-type="linenumber">21</context>
@@ -910,7 +917,7 @@
       </trans-unit>
       <trans-unit id="p2Create" datatype="html">
         <source>Crear gráfica</source>
-        <target> Create graphic </target>
+        <target> Create Graphic</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
           <context context-type="linenumber">28</context>
