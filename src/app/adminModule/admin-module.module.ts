@@ -16,7 +16,9 @@ import {StorageServiceModule} from 'ngx-webstorage-service';
 
 
 @NgModule({
-  declarations: [LoginAdminComponent, FormLoginComponent, HeaderAdminComponent, ReportsAdminComponent, FooterAdminComponent, HeaderLoginComponent, GraphsAdminComponent, CreateGraphComponent],
+  declarations: [LoginAdminComponent, FormLoginComponent, HeaderAdminComponent,
+    ReportsAdminComponent, FooterAdminComponent,
+    HeaderLoginComponent, GraphsAdminComponent, CreateGraphComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,

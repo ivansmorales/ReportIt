@@ -1,26 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//Modulos
+// Modulos
 import {UserModuleModule} from './userModule/user-module.module';
 import {AdminModuleModule} from './adminModule/admin-module.module';
 
-//Local Storage
+// Local Storage
 import {LogalStorageService} from './userModule/services/logal-storage.service';
 import {StorageServiceModule} from 'ngx-webstorage-service';
 
-//Landing Page
+// Landing Page
 import {LandingPageComponent} from './main_components/landing-page/landing-page.component';
 import {HeaderLandingPageComponent} from './main_components/landing-page/components/header-landing-page/header-landing-page.component';
 import {InfoLandingPageComponent} from './main_components/landing-page/components/info-landing-page/info-landing-page.component';
 
-//Footer
+// Footer
 import {FooterComponent} from './main_components/footer/footer.component';
-import {PageNotFoundComponent} from './main_components/page-not-found/page-not-found.component' 
+import {PageNotFoundComponent} from './main_components/page-not-found/page-not-found.component';
 import { HeaderpagenotfoundComponent } from './main_components/page-not-found/components/headerpagenotfound/headerpagenotfound.component';
 import { ErrorMessageComponent } from './main_components/page-not-found/components/error-message/error-message.component';
 import { CarouselLandingpageComponent } from './main_components/landing-page/components/carousel-landingpage/carousel-landingpage.component';

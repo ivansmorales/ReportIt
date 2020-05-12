@@ -6,20 +6,20 @@ import {Admin} from '../models/admin';
 })
 export class AdminService {
 
-  admins = [new Admin("Administrador", "id") ];
+  admins = [new Admin('Administrador', 'id') ];
 
   constructor() { }
 
-  getAdmins() : Admin[]{
+  getAdmins(): Admin[]{
     return this.admins;
   }
 
-  addAdmin(admin : Admin){
+  addAdmin(admin: Admin){
     this.admins.push(admin);
   }
 
-  deleteAdmin(admin : Admin){
-    this.admins.splice(1,0);
+  deleteAdmin(admin: Admin){
+    this.admins.splice(1, 0);
   }
 
   /* Método para descargar reportes */

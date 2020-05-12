@@ -8,14 +8,14 @@ import { Report } from '../models/report';
 })
 export class LogalStorageService {
 
-  public userList : User;
-  public reportList : Report;
+  public userList: User;
+  public reportList: Report;
 
   public graphList = [];
 
   constructor(@Inject(LOCAL_STORAGE) private storage: StorageService) { }
 
-  public storeOnLocalStorage(user: User) : void{
+  public storeOnLocalStorage(user: User): void{
     const userListStorage = this.storage.get('USER_LIST') || [];
     userListStorage.push({nombre: user.nombre, correo: user.correo, contrasena: user.contrasena, fecha: new Date()});
     this.storage.set('USER_LIST', userListStorage);
@@ -23,31 +23,31 @@ export class LogalStorageService {
 
   }
 
-  public readLocalStorage() : object{
+  public readLocalStorage(): object{
     return this.storage.get('USER_LIST');
   }
 
-  public storeOnLocalStorageReports (report : Report) : void {
+  public storeOnLocalStorageReports(report: Report): void {
     const reportListStorage = this.storage.get('REPORT_LIST') || [];
-    reportListStorage.push({ titulo : report.titulo, nombre : report.nombre,  fecha: new Date(), descripcion : report.descripcion, foto : report.foto, hora : new Date()});
+    reportListStorage.push({ titulo : report.titulo, nombre : report.nombre,  fecha: new Date(),
+    descripcion : report.descripcion, foto : report.foto, hora : new Date()});
     this.storage.set('REPORT_LIST', reportListStorage);
     this.reportList = reportListStorage;
   }
 
-  public readLocalStorageReports() : object{
+  public readLocalStorageReports(): object{
     return this.storage.get('REPORT_LIST');
   }
 
-  public storeOnLocalStorageAdmin(graph: string, x_array, y_array) : void{
+  public storeOnLocalStorageAdmin(graph: string, xArray, yArray): void{
     const graphListStorage = this.storage.get('GRAPH_LIST') || [];
-    graphListStorage.push({title: graph, label: x_array, y_pos: y_array});
+    graphListStorage.push({title: graph, label: xArray, y_pos: yArray});
     this.storage.set('GRAPH_LIST', graphListStorage);
     this.graphList = graphListStorage;
   }
 
-  public readLocalStorageAdmin() : object{
+  public readLocalStorageAdmin(): object{
     return this.storage.get('GRAPH_LIST');
   }
-
 
 }

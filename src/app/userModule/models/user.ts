@@ -7,15 +7,12 @@ export class User {
     */
 
     constructor(
-        public nombre? : string,
-        public correo? : string,
-        public contrasena? : string
-        
+        public nombre?: string,
+        public correo?: string,
+        public contrasena?: string
         /*
         public id? : string,
         public report? : Report
-        */
-    ){
-        
+        */){
     }
 }

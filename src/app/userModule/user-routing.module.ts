@@ -6,7 +6,7 @@ import {RegisterUserComponent} from './register-user/register-user.component';
 import {ReportsComponent} from './reports/reports.component';
 import {ReportsUserComponent} from './reports-user/reports-user.component';
 
-const routes : Routes = [
+const routes: Routes = [
     {path: 'loginUser', component: LogInUserComponent},
     {path: 'registerUser', component: RegisterUserComponent},
     {path: 'reports', component: ReportsComponent},

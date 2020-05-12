@@ -9,44 +9,27 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   templateUrl: './reports.component.html',
   styleUrls: ['./reports.component.scss'],
   animations: [
-    trigger('fade', [ 
-      transition('void => *', [
-        style({ opacity: 0 }), 
-        animate(500, style({opacity: 1}))
-      ]) 
-    ]),
-    trigger('fade1', [ 
-      transition('void => *', [
-        style({ opacity: 0 }), 
-        animate(1000, style({opacity: 1}))
-      ]) 
-    ]),
-    trigger('fade2', [ 
-      transition('void => *', [
-        style({ opacity: 0 }), 
-        animate(1500, style({opacity: 1}))
-      ]) 
-    ]),
+    trigger('fade', [transition('void => *', [style({ opacity: 0 }), animate(500, style({opacity: 1}))])]),
+    trigger('fade1', [transition('void => *', [style({ opacity: 0 }), animate(1000, style({opacity: 1}))])]),
+    trigger('fade2', [transition('void => *', [style({ opacity: 0 }), animate(1500, style({opacity: 1}))]) ]),
   ]
 })
 export class ReportsComponent implements OnInit {
 
-  public divCrear : boolean = false;
-  public divReportes : boolean = true;
-  public divHistorial : boolean = true;
-  public divValorado : boolean = true;
+  public divCrear = false;
+  public divReportes = true;
+  public divHistorial = true;
+  public divValorado = true;
   public reportModel = new Report();
 
-  constructor(public localStorageService : LogalStorageService) {
+  constructor(public localStorageService: LogalStorageService) {
 
   }
 
   onSubmit(){
     this.localStorageService.storeOnLocalStorageReports(this.reportModel);
-  }  
-
-  ngOnInit(): void {
-    //this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
+  }
+  ngOnInit(): void {// this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
   }
 
   verCrear(){

@@ -7,7 +7,7 @@ import { FormLoginComponent } from './login-admin/components/form-login/form-log
 import { HeaderAdminComponent } from './login-admin/components/header-admin/header-admin.component';
 import {ReportsAdminComponent} from './reports-admin/reports-admin.component';
 
-const routes : Routes = [
+const routes: Routes = [
   {path: 'loginAdmin', component: LoginAdminComponent},
   {path: 'reportsAdmin', component: ReportsAdminComponent}
 ];

@@ -11,22 +11,22 @@ import { Report} from '../../userModule/models/report';
 })
 export class ReportsAdminComponent implements OnInit {
 
-  public divReportes : boolean = false;
-  public divEditar : boolean = true;
-  public divValorado : boolean = true;
-  public divUsers : boolean = true;
-  public divGraphs : boolean = true;
-  public createGraphs : boolean = true;
-  public graphsAdmin : boolean = true;
+  public divReportes = false;
+  public divEditar = true;
+  public divValorado = true;
+  public divUsers = true;
+  public divGraphs = true;
+  public createGraphs = true;
+  public graphsAdmin = true;
 
-  constructor(public userService : UserService, public localStorageService : LogalStorageService) { }
+  constructor(public userService: UserService, public localStorageService: LogalStorageService) { }
 
-  user : User = this.localStorageService.readLocalStorage();
+  user: User = this.localStorageService.readLocalStorage();
 
   ngOnInit(): void {
-    //this.getUsers();
-    //this.localStorageService.readLocalStorage();
-    //this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
+    // this.getUsers();
+    // this.localStorageService.readLocalStorage();
+    // this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
   }
 
   /*
@@ -34,7 +34,6 @@ export class ReportsAdminComponent implements OnInit {
            new User("Alexandra", "ale@reportit.com", "Contraseña"),
            new User("Iván", "ivan@reportit.com", "Contraseña"),
           ];
-  
   getUsers(){
     this.users = this.userService.getUsers();
   }

@@ -9,27 +9,24 @@ import {StorageService} from 'ngx-webstorage-service';
 
 export class UserService {
 
-  //users = [new User("Usuario", "id", (new Report("Titulo reporte", "Nombre que hace el reporte", "Fecha reporte", "Descripcion del reporte", "Foto", "Hora"))) ];
+  /* users = [new User("Usuario", "id", (new Report("Titulo reporte","Nombre que hace el reporte",
+"Fecha reporte", "Descripcion del reporte", "Foto", "Hora"))) ];*/
 
-  users = [new User("Diego", "Correo", "Contraseña"),
-           new User("Alexandra", "Correo", "Contraseña"),
-           new User("Iván", "Correo", "Contraseña"),
-          ];
-
-  
-
+  users = [new User('Diego', 'Correo', 'Contraseña'),
+           new User('Alexandra', 'Correo', 'Contraseña'),
+           new User('Iván', 'Correo', 'Contraseña'),
+  ];
   constructor() { }
-
-  getUsers() : User[]{
+  getUsers(): User[]{
     return this.users;
   }
 
-  addUser(user : User){
+  addUser(user: User){
     this.users.push(user);
   }
 
-  deleteUser(user : User){
-    this.users.splice(1,0);
+  deleteUser(user: User){
+    this.users.splice(1, 0);
   }
 
 }

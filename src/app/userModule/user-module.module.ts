@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 
 import { CommonModule } from '@angular/common';
 
@@ -15,11 +15,13 @@ import { HeaderLoginRegisterComponent } from './main-components/header-login-reg
 import { FooterLoginRegisterComponent } from './main-components/footer-login-register/footer-login-register.component';
 import { ReportsComponent} from './reports/reports.component';
 
-//Local storage
+// Local storage
 import {StorageServiceModule} from 'ngx-webstorage-service';
 
 @NgModule({
-  declarations: [RegisterUserComponent, LogInUserComponent, ReportsComponent, ReportsUserComponent, FormularioLogInComponent, FormRegisteruserComponent, HeaderLoginRegisterComponent, FooterLoginRegisterComponent],
+  declarations: [RegisterUserComponent, LogInUserComponent, ReportsComponent,
+    ReportsUserComponent, FormularioLogInComponent, FormRegisteruserComponent,
+    HeaderLoginRegisterComponent, FooterLoginRegisterComponent],
   imports: [
     CommonModule,
     UserRoutingModule,
