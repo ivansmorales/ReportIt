@@ -11,6 +11,8 @@ export class LogalStorageService {
   public userList : User;
   public reportList : Report;
 
+  public graphList = [];
+
   constructor(@Inject(LOCAL_STORAGE) private storage: StorageService) { }
 
   public storeOnLocalStorage(user: User) : void{
@@ -35,5 +37,17 @@ export class LogalStorageService {
   public readLocalStorageReports() : object{
     return this.storage.get('REPORT_LIST');
   }
+
+  public storeOnLocalStorageAdmin(graph: string, x_array, y_array) : void{
+    const graphListStorage = this.storage.get('GRAPH_LIST') || [];
+    graphListStorage.push({title: graph, label: x_array, y_pos: y_array});
+    this.storage.set('GRAPH_LIST', graphListStorage);
+    this.graphList = graphListStorage;
+  }
+
+  public readLocalStorageAdmin() : object{
+    return this.storage.get('GRAPH_LIST');
+  }
+
 
 }
