@@ -12,7 +12,6 @@ import { HeaderLoginComponent } from './main-components/header-login/header-logi
 import { GraphsAdminComponent } from './reports-admin/components/graphs-admin/graphs-admin.component';
 import { CreateGraphComponent } from './reports-admin/components/create-graph/create-graph.component';
 
-import {LocalStorageAdminService} from './services/local-storage-admin.service';
 import {StorageServiceModule} from 'ngx-webstorage-service';
 
 
