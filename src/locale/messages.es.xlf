@@ -302,11 +302,15 @@
           <context context-type="linenumber">88</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="spanReporte" datatype="html">
+      <trans-unit id="9e5b3a7d49e13b9c9851ee386dd2b4d5c3dee457" datatype="html">
         <source>Insertar foto</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/reports/reports.component.html</context>
           <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">91</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a0Reporte" datatype="html">
@@ -439,15 +443,6 @@
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="pLog" datatype="html">
-        <source>
-            ¿No tienes cuenta? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Regístrate<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
-        </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/userModule/log-in-user/components/formulario-log-in/formulario-log-in.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="labelLog" datatype="html">
         <source>E-mail</source>
         <context-group purpose="location">
@@ -462,20 +457,18 @@
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="p1Log" datatype="html">
-        <source>
-            ¿Ya tienes una cuenta?<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Inicia sesión<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
-        </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="labReg" datatype="html">
         <source>Nombre</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
           <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dd2a11ebc737589080ed400dacc33a8c8c84728b" datatype="html">
+        <source>Nombre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="lab2Reg" datatype="html">
@@ -485,6 +478,17 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="f85dc01e7aab1a5c282d14b74650255ae4042fe0" datatype="html">
+        <source>E-mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/login-admin/components/form-login/form-login.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="lab3Reg" datatype="html">
         <source>Contraseña</source>
         <context-group purpose="location">
@@ -492,18 +496,331 @@
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="f85dc01e7aab1a5c282d14b74650255ae4042fe0" datatype="html">
-        <source>E-mail</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/adminModule/login-admin/components/form-login/form-login.component.html</context>
-          <context context-type="linenumber">11</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="e369e13629132e32dcd958b82261059243f21d58" datatype="html">
         <source>Contraseña</source>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/adminModule/login-admin/components/form-login/form-login.component.html</context>
           <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="412209b9cfe738093946bc2706ff80c1ae5cab02" datatype="html">
+        <source>Regístrate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3710e76def6dfb9b54d9edddc2033268bcb06b99" datatype="html">
+        <source>Regístrate con Twitter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/userModule/register-user/components/form-registeruser/form-registeruser.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h1log" datatype="html">
+        <source>Iniciar Sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/login-admin/components/form-login/form-login.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="labLog" datatype="html">
+        <source>Contraseña</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/login-admin/components/form-login/form-login.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="656864832cc2c37106aaa75d9fe345bd879508c5" datatype="html">
+        <source>Iniciar Sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/login-admin/components/form-login/form-login.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pOut" datatype="html">
+        <source>Cerrar Sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p1Out" datatype="html">
+        <source>&gt;Inicio </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p2Out" datatype="html">
+        <source>Cerrar sesión </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p3Out" datatype="html">
+        <source> Crear </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p4Out" datatype="html">
+        <source> Reportes </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p5Out" datatype="html">
+        <source> Valorado </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p7Out" datatype="html">
+        <source>
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>  Reportes 
+                </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p8Out" datatype="html">
+        <source>
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>     Editar 
+                </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p9Out" datatype="html">
+        <source>
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Valorado
+                </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p10Out" datatype="html">
+        <source>
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>    Usuarios
+                
+                </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p11Out" datatype="html">
+        <source>
+                    <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>  Estadisticas 
+                </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h1Out" datatype="html">
+        <source>Reporte de Incidencias</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lab1Out" datatype="html">
+        <source>Título</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lab2Out" datatype="html">
+        <source>Nombre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lab3Out" datatype="html">
+        <source>Fecha</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lab4Out" datatype="html">
+        <source>Descripción del reporte</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p154Out" datatype="html">
+        <source> Editar </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p16Out" datatype="html">
+        <source> Descargar </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td1Out" datatype="html">
+        <source>Nombre del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="td2Out" datatype="html">
+        <source>Persona que lo reporta:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th1Out" datatype="html">
+        <source>Fecha del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th2Out" datatype="html">
+        <source>Incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th3Out" datatype="html">
+        <source>Nombre del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th4Out" datatype="html">
+        <source>Persona que lo reporta:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th5Out" datatype="html">
+        <source>Fecha del incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th6Out" datatype="html">
+        <source>Incidente:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h190Out" datatype="html">
+        <source>Usuarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th11Out" datatype="html">
+        <source>Correo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="th12Out" datatype="html">
+        <source>Contraseña</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h180Out" datatype="html">
+        <source>Gestión de estadísticas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="64ef3c9e8b7f8e4956dfc824adf061fb261b0d4e" datatype="html">
+        <source>Crear gráficas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="84fa357a22129c5ece9e04bdf135e05cb1b9368e" datatype="html">
+        <source>Mostrar gráficas existentes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/reports-admin.component.html</context>
+          <context context-type="linenumber">207</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="014a376defb6071655dd3230b2f4e1e03dac45d0" datatype="html">
+        <source>Id de seguridad, eg. 10283</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="34a960b96a3ed52b83463b709162548af5716189" datatype="html">
+        <source>Año de la gráfica, eg.2020</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edc980a2df338a04ee6bb9e22bba84b263a82246" datatype="html">
+        <source>Nombre de la gráfuca</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="410ea38ce4719ec3734d15adbca740ea09310488" datatype="html">
+        <source>Datos a agregar (numero)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pCreate" datatype="html">
+        <source>Generar campos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="p2Create" datatype="html">
+        <source>Crear gráfica</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/adminModule/reports-admin/components/create-graph/create-graph.component.html</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
     </body>

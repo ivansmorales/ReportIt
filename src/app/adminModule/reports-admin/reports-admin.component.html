@@ -6,7 +6,7 @@
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a (click)="verReportes()" >Inicio</a></li>
-                <li><a routerLink = "admins/loginAdmin">Cerrar Sesión</a></li>
+                <li><a routerLink = "admins/loginAdmin"> <p i18n = "@@pOut">Cerrar Sesión</p></a></li>
             </ul>
             <ul id="slide-out" class="sidenav">
                 <li>
@@ -15,15 +15,15 @@
                 <li>
                     <div class="divider"></div>
                 </li>
-                <li><a class="waves-effect" (click)="verReportes()" >Inicio</a></li>
-                <li><a class="waves-effect" routerLink = "/admins/loginAdmin"> Cerrar sesión</a></li>
+                <li><a class="waves-effect" (click)="verReportes()" > <p i18n = "@@p1Out">>Inicio </p></a></li>
+                <li><a class="waves-effect" routerLink = "/admins/loginAdmin"> <p i18n = "@@p2Out">Cerrar sesión </p></a></li>
                 <li>
                     <a class="subheader"></a>
                 </li>
-                <li><a class="sidenav-close"><i class="far fa-newspaper"></i>Crear</a></li>
-                <li><a class="sidenav-close"><i class="fas fa-comment-alt"></i>Reportes</a>
+                <li><a class="sidenav-close"><i class="far fa-newspaper"></i> <p i18n = "@@p3Out"> Crear </p></a></li>
+                <li><a class="sidenav-close"><i class="fas fa-comment-alt"></i> <p i18n = "@@p4Out"> Reportes </p></a>
                 </li>
-                <li><a class="sidenav-close"><i class="fas fa-star"></i>Valorado</a></li>
+                <li><a class="sidenav-close"><i class="fas fa-star"></i> <p i18n = "@@p5Out"> Valorado </p></a></li>
             </ul>
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
         </div>
@@ -41,58 +41,59 @@
         <aside id="left-sidebar-nav">
             <ul id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y" style="width: 240px; left: -250px;">
 
-                <li class="li-sidebar" (click)="verReportes()">
-                    <i class="fas fa-comment-alt"></i> Reportes
+                <li class="li-sidebar" (click)="verReportes()" i18n = "@@p7Out">
+                    <i class="fas fa-comment-alt"></i>  Reportes 
                 </li>
-                <li class="li-sidebar" (click)="verEditar()">
-                    <i class="fas fa-newspaper"></i> &nbsp;&nbsp;&nbsp;Editar
+                <li class="li-sidebar" (click)="verEditar()" i18n = "@@p8Out">
+                    <i class="fas fa-newspaper"></i> &nbsp;&nbsp;&nbsp; Editar 
                 </li>
-                <li class="li-sidebar" (click)="verValorado()">
+                <li class="li-sidebar" (click)="verValorado()" i18n = "@@p9Out" >
                     <i class="fas fa-star"></i> Valorado
                 </li>
-                <li class="li-sidebar" (click)="verUsuarios()">
-                    <i class="fas fa-users"></i> &nbsp;&nbsp;Usuarios
+                <li class="li-sidebar" (click)="verUsuarios()" i18n = "@@p10Out">
+                    <i class="fas fa-users"></i> &nbsp;&nbsp; Usuarios
+                
                 </li>
-                <li class="li-sidebar" (click)="verGraficas()">
-                    <i class="fas fa-chart-pie"></i> Estadisticas
+                <li class="li-sidebar" (click)="verGraficas()" i18n = "@@p11Out">
+                    <i class="fas fa-chart-pie"></i>  Estadisticas 
                 </li>
             </ul>
 
         </aside>
         <div class="col s10 righty">
             <div [hidden]="divReportes" id="crear" class="container">
-                <h1>Reporte de Incidencias</h1>
+                <h1 i18n = "@@h1Out">Reporte de Incidencias</h1>
                 <div class="row inside-container">
                     <form class="col s12">
                         <div class="row row-input">
                             <div class="input-field col s12">
                                 <input id="title" type="text" class="validate">
-                                <label for="first_name">Título</label>
+                                <label for="first_name" i18n = "@@lab1Out">Título</label>
                             </div>
                         </div>
                         <div class="row row-input">
                             <div class="input-field col s6">
                                 <input id="first_name" type="text" class="validate">
-                                <label for="first_name">Nombre</label>
+                                <label for="first_name" i18n = "@@lab2Out">Nombre</label>
                             </div>
                             <div class="input-field col s6">
                                 <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Fecha</label>
+                                <label for="last_name" i18n = "@@lab3Out">Fecha</label>
                             </div>
                         </div>
                         <div class="row row-input">
                             <div class="input-field col s6">
                                 <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                <label for="textarea1">Descripción del reporte</label>
+                                <label for="textarea1" i18n = "@@lab4Out">Descripción del reporte</label>
                             </div>
                             <div class="input-field col s6">
                                 <div class="btn">
-                                    <span>Insertar foto</span>
+                                    <span i18n >Insertar foto</span>
                                 </div>
                             </div>
                         </div>
                         <div class="center-align">
-                            <a class="waves-effect waves-light btn-small ">Editar</a>
+                            <a class="waves-effect waves-light btn-small "> <p i18n = "@@p154Out" > Editar </p></a>
                         </div>
                     </form>
                 </div>
@@ -100,7 +101,7 @@
             <!---->
             <div [hidden]="divEditar" id="reportes" class="container">
                 <div class="right-align">
-                    <a class="waves-effect waves-light btn-small ">Descargar</a>
+                    <a class="waves-effect waves-light btn-small "> <p i18n = "@@p16Out"> Descargar </p></a>
                 </div>
                 <div class="report">
                     <div class="row">
@@ -110,19 +111,19 @@
                         <div class="col s6 col-data">
                             <table>
                                 <tr>
-                                    <td class="description">Nombre del incidente:</td>
+                                    <td class="description" i18n = "@@td1Out">Nombre del incidente:</td>
                                     <td class="data">Auto mal estacionado</td>
                                 </tr>
                                 <tr>
-                                    <td class="description">Persona que lo reporta:</td>
+                                    <td class="description" i18n = "@@td2Out">Persona que lo reporta:</td>
                                     <td class="data">Diego Moreno</td>
                                 </tr>
                                 <tr>
-                                    <th class="description">Fecha del incidente:</th>
+                                    <th class="description" i18n = "@@th1Out">Fecha del incidente:</th>
                                     <th class="data">12/02/2020</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Incidente:</th>
+                                    <th class="description" i18n = "@@th2Out">Incidente:</th>
                                     <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
                                     </th>
                                 </tr>
@@ -138,19 +139,19 @@
                         <div class="col s6 col-data">
                             <table>
                                 <tr>
-                                    <th class="description">Nombre del incidente:</th>
+                                    <th class="description" i18n = "@@th3Out">Nombre del incidente:</th>
                                     <th class="data">Bache</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Persona que lo reporta:</th>
+                                    <th class="description" i18n = "@@th4Out">Persona que lo reporta:</th>
                                     <th class="data">Ivan Morales</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Fecha del incidente:</th>
+                                    <th class="description" i18n = "@@th5Out">Fecha del incidente:</th>
                                     <th class="data">13/02/2020</th>
                                 </tr>
                                 <tr>
-                                    <th class="description">Incidente:</th>
+                                    <th class="description" i18n = "@@th6Out">Incidente:</th>
                                     <th class="data">En la calle Prolongación Miramontes hay un bache.</th>
                                 </tr>
                             </table>
@@ -173,12 +174,12 @@
                 <div class="report">
                     <div class="row">
                         <div class="col s6 col-img" style="width: 750px;">
-                            <h1>Usuarios</h1>
+                            <h1 i18n = "@@h190Out">Usuarios</h1>
                             <table>
                                 <thead>
-                                    <th>Nombre</th>
-                                    <th>Correo</th>
-                                    <th>Contraseña</th>
+                                    <th i18n = "@@th1Out">Nombre</th>
+                                    <th i18n = "@@th11Out">Correo</th>
+                                    <th i18n = "@@th12Out">Contraseña</th>
                                 </thead>
                                 <tbody>
                                     <tr *ngFor="let variableUsers of user">
@@ -193,17 +194,17 @@
                 </div>
             </div>
             <div [hidden]="divGraphs" id="graficas" class="container center">
-                    <h1>Gestión de estadísticas</h1>
+                    <h1 i18n = "@@h180Out">Gestión de estadísticas</h1>
                     <br><br>
                     <div class="btn center" (click)="showCreateGraphs()">
-                        <span>Crear gráficas</span>
+                        <span i18n >Crear gráficas</span>
                     </div>
                     <div [hidden]="createGraphs">
                         <app-create-graph></app-create-graph>
                     </div>
                     <br><br><br>
                     <div class="btn" (click)="showGraphicsComp()">
-                        <span>Mostrar gráficas existentes</span>
+                        <span i18n >Mostrar gráficas existentes</span>
                     </div>
                     <div [hidden]="graphsAdmin">
                         <br><br>
