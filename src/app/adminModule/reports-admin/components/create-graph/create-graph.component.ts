@@ -41,7 +41,7 @@ export class CreateGraphComponent implements OnInit {
       this.x_array.push(label);
       this.y_array.push(y_val);
     }
-    this.localStorageService.storeOnLocalStorageAdmin(name);
+    this.localStorageService.storeOnLocalStorageAdmin(name, this.x_array, this.y_array);
   }
 
 }

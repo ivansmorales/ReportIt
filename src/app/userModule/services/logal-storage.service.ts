@@ -38,9 +38,9 @@ export class LogalStorageService {
     return this.storage.get('REPORT_LIST');
   }
 
-  public storeOnLocalStorageAdmin(graph: string) : void{
+  public storeOnLocalStorageAdmin(graph: string, x_array, y_array) : void{
     const graphListStorage = this.storage.get('GRAPH_LIST') || [];
-    graphListStorage.push({title: graph});
+    graphListStorage.push({title: graph, label: x_array, y_pos: y_array});
     this.storage.set('GRAPH_LIST', graphListStorage);
     this.graphList = graphListStorage;
   }
