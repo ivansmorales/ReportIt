@@ -1,40 +1,44 @@
 <div id="navbar" @fade>
-    <nav class="charcoal">
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">
-                <img src="assets/img/logo.png" alt="" width="150" height="70">
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li (click)="verCrear()" i18n ="@@aReporte"><a>Inicio</a></li>
-                <li><a href="" i18n ="@@a2Reporte">Cerrar Sesión</a></li>
-            </ul>
-            <ul id="slide-out" class="sidenav">
-                <li>
-                    <img src="img/logo.png" alt="Logo">
-                </li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-                <li><a class="waves-effect" i18n ="@@a3Reporte">Inicio</a></li>
-                <li><a class="waves-effect" href="login.html" i18n ="@@a4Reporte">Cerrar sesión</a></li>
-                <li>
-                    <a class="subheader"></a>
-                </li>
-                <li (click)="verCrear()"><a class="sidenav-close" i18n ="@@a5Reporte"><i class="far fa-newspaper"></i>Crear</a></li>
-                <li (click)="verReportes()"><a class="sidenav-close" i18n ="@@a6Reporte"><i class="fas fa-comment-alt"></i>Reportes</a>
-                </li>
-                <li (click)="verHistorial()"><a class="sidenav-close" i18n ="@@a7Reporte"><i class="fas fa-history"></i>Historial</a>
-                </li>
-                <li (click)="verValorado()"><a class="sidenav-close" i18n ="@@a8Reporte"><i class="fas fa-star"></i>Valorado</a></li>
-            </ul>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-        </div>
-    </nav>
+  <nav class="charcoal">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">
+        <img src="assets/img/logo.png" alt="" width="150" height="70">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li (click)="verCrear()" i18n="@@aReporte"><a>Inicio</a></li>
+        <li><a href="" i18n="@@a2Reporte">Cerrar Sesión</a></li>
+      </ul>
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <img src="img/logo.png" alt="Logo">
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" i18n="@@a3Reporte">Inicio</a></li>
+        <li><a class="waves-effect" href="login.html" i18n="@@a4Reporte">Cerrar sesión</a></li>
+        <li>
+          <a class="subheader"></a>
+        </li>
+        <li (click)="verCrear()"><a class="sidenav-close" i18n="@@a5Reporte"><i class="far fa-newspaper"></i>Crear</a>
+        </li>
+        <li (click)="verReportes()"><a class="sidenav-close" i18n="@@a6Reporte"><i
+              class="fas fa-comment-alt"></i>Reportes</a>
+        </li>
+        <li (click)="verHistorial()"><a class="sidenav-close" i18n="@@a7Reporte"><i
+              class="fas fa-history"></i>Historial</a>
+        </li>
+        <li (click)="verValorado()"><a class="sidenav-close" i18n="@@a8Reporte"><i class="fas fa-star"></i>Valorado</a>
+        </li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+    </div>
+  </nav>
 </div>
 
 <section id="main">
-    <div class="row">
-        <!--
+  <div class="row">
+    <!--
         <div class="col s2 lefty">
             <button onclick="verCrear()"><i class="far fa-newspaper"></i> &emsp;Crear</button>
             <button onclick="verReportes()"><i class="fas fa-comment-alt"></i> &emsp;Reportes</button>
@@ -42,200 +46,209 @@
             <button onclick="verValorado()"><i class="fas fa-star"></i> &emsp;Valorado</button>
         </div>
         -->
-        <aside id="left-sidebar-nav" @fade1>
-            <ul id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y" style="width: 240px; left: -250px;">
-                <li (click)="verCrear()" class="li-sidebar" i18n ="@@liReporte">
-                    <i class="far fa-newspaper"></i> Crear
-                </li>
-                <li (click)="verReportes()" class="li-sidebar" i18n ="@@li2Reporte">
-                    <i class="fas fa-comment-alt"></i> Reportes
-                </li>
-                <li (click)="verHistorial()" class="li-sidebar" i18n ="@@li3Reporte">
-                    <i class="fas fa-history"></i> Historial
-                </li>
-                <li (click)="verValorado()" class="li-sidebar" i18n ="@@li4Reporte">
-                    <i class="fas fa-star"></i> Valorado
-                </li>
-            </ul>
+    <aside id="left-sidebar-nav" @fade1>
+      <ul id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y"
+        style="width: 240px; left: -250px;">
+        <li (click)="verCrear()" class="li-sidebar" i18n="@@liReporte">
+          <i class="far fa-newspaper"></i> Crear
+        </li>
+        <li (click)="verReportes()" class="li-sidebar" i18n="@@li2Reporte">
+          <i class="fas fa-comment-alt"></i> Reportes
+        </li>
+        <li (click)="verHistorial()" class="li-sidebar" i18n="@@li3Reporte">
+          <i class="fas fa-history"></i> Historial
+        </li>
+        <li (click)="verValorado()" class="li-sidebar" i18n="@@li4Reporte">
+          <i class="fas fa-star"></i> Valorado
+        </li>
+      </ul>
 
-        </aside>
+    </aside>
 
-        <div class="col s10 righty" @fade2>
-            <div [hidden]="divCrear" id="crear" class="container">
-                <h1 i18n ="@@h12Reporte">Reporte de Incidencias</h1>
-                <div class="row inside-container">
-                    <form class="col s12" reportCreateForm="ngform">
-                        <div class="row row-input">
-                            <div class="input-field col s12">
-                              <!-- <input id="title" name ="titulo" type="text" class="validate form-control"> --> 
-                              <input id="titulo" name = "firstname" type="text" class="validate form-control" [(ngModel)]="reportModel.titulo">  
-                              <label for="titulo" i18n ="@@labReporte">Título</label>
-                            </div>
-                        </div>
-                        <div class="row row-input">
-                            <div class="input-field col s6">
-                                <input id="first_name" name = "firstname" type="text" class="validate form-control" [(ngModel)]="reportModel.nombre" >
-                                <label for="first_name" i18n ="@@lab1Reporte">Nombre</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="last_name" name ="fecha" type="text" class="validate form-control" [(ngModel)]="reportModel.fecha">
-                                <label for="last_name" i18n ="@@lab3Reporte">Fecha</label>
-                            </div>
-                        </div>
-                        <div class="row row-input">
-                            <div class="input-field col s6">
-                                <textarea id="textarea1" name = "descripcion" class="materialize-textarea form-control" [(ngModel)]="reportModel.descripcion"></textarea>
-                                <label for="textarea1" i18n ="@@lab4Reporte">Descripción del reporte</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <div class="btn">
-                                    <span i18n >Insertar foto</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="center-align">
-                            <a class="waves-effect waves-light btn-small " (click)="onSubmit()" i18n ="@@a0Reporte">Publicar</a>
-                        </div>
-                    </form>
-                </div>
+    <div class="col s10 righty" @fade2>
+      <div [hidden]="divCrear" id="crear" class="container">
+        <h1 i18n="@@h12Reporte">Reporte de Incidencias</h1>
+        <div class="row inside-container">
+          <form class="col s12" reportCreateForm="ngform">
+            <div class="row row-input">
+              <div class="input-field col s12">
+                <!-- <input id="title" name ="titulo" type="text" class="validate form-control"> -->
+                <input id="titulo" name="firstname" type="text" class="validate form-control"
+                  [(ngModel)]="reportModel.titulo">
+                <label for="titulo" i18n="@@labReporte">Título</label>
+              </div>
             </div>
-            <div [hidden]="divReportes" id="reportes" class="container">
-                <div class="report">
-                    <div class="row">
-                        <div class="col s6 col-img">
-                            <img src="assets/img/estacionado.jpg" alt="">
-                        </div>
-                        <div class="col s6 col-data">
-                            <table>
-                                <tr>
-                                    <td class="description" i18n ="@@tdReporte">Nombre del incidente:</td>
-                                    <td class="data">Auto mal estacionado</td>
-                                </tr>
-                                <tr>
-                                    <td class="description" i18n ="@@td2Reporte">Persona que lo reporta:</td>
-                                    <td class="data">Diego Moreno</td>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n ="@@td3Reporte">Fecha del incidente:</th>
-                                    <th class="data">12/02/2020</th>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n ="@@thReporte">Incidente:</th>
-                                    <th class="data" >En la calle Prolongación Miramontes hay un auto mal estacionado.
-                                    </th>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="center-align">
-                            <a class="waves-effect waves-light btn green">&emsp;<i
-                                    class="far fa-thumbs-up">&emsp;</i></a>&emsp;
-                            <a class="waves-effect waves-light btn red">&emsp;<i
-                                    class="far fa-thumbs-down"></i>&emsp;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="report">
-                    <div class="row">
-                        <div class="col s6 col-img">
-                            <img src="assets/img/bache2.png" alt="">
-                        </div>
-                        <div class="col s6 col-data">
-                            <table>
-                                <tr>
-                                    <th class="description" i18n ="@@th2Reporte">Nombre del incidente:</th>
-                                    <th class="data">Bache</th>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n ="@@th3Reporte">Persona que lo reporta:</th>
-                                    <th class="data">Ivan Morales</th>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n ="@@th4Reporte">Fecha del incidente:</th>
-                                    <th class="data">13/02/2020</th>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n ="@@th5Reporte">Incidente:</th>
-                                    <th class="data">En la calle Prolongación Miramontes hay un bache.</th>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="center-align">
-                            <a class="waves-effect waves-light btn green">&emsp;<i
-                                    class="far fa-thumbs-up">&emsp;</i></a>&emsp;
-                            <a class="waves-effect waves-light btn red">&emsp;<i
-                                    class="far fa-thumbs-down"></i>&emsp;</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="row row-input">
+              <div class="input-field col s6">
+                <input id="first_name" name="firstname" type="text" class="validate form-control"
+                  [(ngModel)]="reportModel.nombre">
+                <label for="first_name" i18n="@@lab1Reporte">Nombre</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" name="fecha" type="text" class="validate form-control"
+                  [(ngModel)]="reportModel.fecha">
+                <label for="last_name" i18n="@@lab3Reporte">Fecha</label>
+              </div>
             </div>
-            <div [hidden]="divHistorial" id="historial" class="container">
-                <div class="report">
-                    <div class="row">
-                        <div class="col s6 col-img">
-                            <img src="assets/img/accidente.jpg" alt="">
-                        </div>
-                        <div class="col s6 col-data">
-                            <div class="right-align">
-                                <a class="waves-effect waves-light btn"><i class="far fa-edit"></i></a>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <td class="description" i18n ="@@td9Reporte">Nombre del incidente:</td>
-                                    <td class="data">Accidente</td>
-                                </tr>
-                                <tr>
-                                    <td class="description" i18n ="@@td6Reporte">Persona que lo reporta:</td>
-                                    <td class="data">Diego Moreno</td>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n ="@@td11Reporte">Fecha del incidente:</th>
-                                    <th class="data">02/02/2020</th>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n ="@@th7Reporte">Incidente:</th>
-                                    <th class="data">Choque de dos autos en la Mexico-Cuernavaca</th>
-                                </tr>
-                            </table>
-                        </div>
+            <div class="row row-input">
+              <div class="input-field col s6">
+                <textarea id="textarea1" name="descripcion" class="materialize-textarea form-control"
+                  [(ngModel)]="reportModel.descripcion"></textarea>
+                <label for="textarea1" i18n="@@lab4Reporte">Descripción del reporte</label>
+              </div>
+              <div class="input-field col s6">
+                <form action="#">
+                  <div class="file-field input-field">
+                    <div class="btn">
+                      <span i18n>Insertar foto</span>
+                      <input type="file" accept="image/png, image/jpeg, image/jpg">
                     </div>
-                </div>
-            </div>
-            <div [hidden]="divValorado" id="valorado" class="container">
-                <div class="report">
-                    <div class="row">
-                        <div class="col s6 col-img">
-                            <img src="assets/img/estacionado.jpg" alt="">
-                        </div>
-                        <div class="col s6 col-data">
-                            <div class="right-align">
-                                <a class="waves-effect waves-light btn"><i class="fas fa-star"></i></a>
-                            </div>
-
-                            <table>
-                                <tr>
-                                    <td class="description" i18n ="@@td12Reporte">Nombre del incidente:</td>
-                                    <td class="data">Auto mal estacionado</td>
-                                </tr>
-                                <tr>
-                                    <td class="description" i18n ="@@td13Reporte">Persona que lo reporta:</td>
-                                    <td class="data">Diego Moreno</td>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n ="@@td14Reporte">Fecha del incidente:</th>
-                                    <th class="data">12/02/2020</th>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n ="@@td15Reporte">Incidente:</th>
-                                    <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
-                                    </th>
-                                </tr>
-                            </table>
-                        </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
                     </div>
-                </div>
+                  </div>
+                </form>
+              </div>
             </div>
+            <div class="center-align">
+              <a class="waves-effect waves-light btn-small " (click)="onSubmit()" i18n="@@a0Reporte">Publicar</a>
+            </div>
+          </form>
         </div>
+      </div>
+      <div [hidden]="divReportes" id="reportes" class="container">
+        <div class="report">
+          <div class="row">
+            <div class="col s6 col-img">
+              <img src="assets/img/estacionado.jpg" alt="">
+            </div>
+            <div class="col s6 col-data">
+              <table>
+                <tr>
+                  <td class="description" i18n="@@tdReporte">Nombre del incidente:</td>
+                  <td class="data">Auto mal estacionado</td>
+                </tr>
+                <tr>
+                  <td class="description" i18n="@@td2Reporte">Persona que lo reporta:</td>
+                  <td class="data">Diego Moreno</td>
+                </tr>
+                <tr>
+                  <th class="description" i18n="@@td3Reporte">Fecha del incidente:</th>
+                  <th class="data">12/02/2020</th>
+                </tr>
+                <tr>
+                  <th class="description" i18n="@@thReporte">Incidente:</th>
+                  <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <div class="center-align">
+              <a class="waves-effect waves-light btn green">&emsp;<i class="far fa-thumbs-up">&emsp;</i></a>&emsp;
+              <a class="waves-effect waves-light btn red">&emsp;<i class="far fa-thumbs-down"></i>&emsp;</a>
+            </div>
+          </div>
+        </div>
+        <div class="report">
+          <div class="row">
+            <div class="col s6 col-img">
+              <img src="assets/img/bache2.png" alt="">
+            </div>
+            <div class="col s6 col-data">
+              <table>
+                <tr>
+                  <th class="description" i18n="@@th2Reporte">Nombre del incidente:</th>
+                  <th class="data">Bache</th>
+                </tr>
+                <tr>
+                  <th class="description" i18n="@@th3Reporte">Persona que lo reporta:</th>
+                  <th class="data">Ivan Morales</th>
+                </tr>
+                <tr>
+                  <th class="description" i18n="@@th4Reporte">Fecha del incidente:</th>
+                  <th class="data">13/02/2020</th>
+                </tr>
+                <tr>
+                  <th class="description" i18n="@@th5Reporte">Incidente:</th>
+                  <th class="data">En la calle Prolongación Miramontes hay un bache.</th>
+                </tr>
+              </table>
+            </div>
+            <div class="center-align">
+              <a class="waves-effect waves-light btn green">&emsp;<i class="far fa-thumbs-up">&emsp;</i></a>&emsp;
+              <a class="waves-effect waves-light btn red">&emsp;<i class="far fa-thumbs-down"></i>&emsp;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div [hidden]="divHistorial" id="historial" class="container">
+        <div class="report">
+          <div class="row">
+            <div class="col s6 col-img">
+              <img src="assets/img/accidente.jpg" alt="">
+            </div>
+            <div class="col s6 col-data">
+              <div class="right-align">
+                <a class="waves-effect waves-light btn"><i class="far fa-edit"></i></a>
+              </div>
 
+              <table>
+                <tr>
+                  <td class="description" i18n="@@td9Reporte">Nombre del incidente:</td>
+                  <td class="data">Accidente</td>
+                </tr>
+                <tr>
+                  <td class="description" i18n="@@td6Reporte">Persona que lo reporta:</td>
+                  <td class="data">Diego Moreno</td>
+                </tr>
+                <tr>
+                  <th class="description" i18n="@@td11Reporte">Fecha del incidente:</th>
+                  <th class="data">02/02/2020</th>
+                </tr>
+                <tr>
+                  <th class="description" i18n="@@th7Reporte">Incidente:</th>
+                  <th class="data">Choque de dos autos en la Mexico-Cuernavaca</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div [hidden]="divValorado" id="valorado" class="container">
+        <div class="report">
+          <div class="row">
+            <div class="col s6 col-img">
+              <img src="assets/img/estacionado.jpg" alt="">
+            </div>
+            <div class="col s6 col-data">
+              <div class="right-align">
+                <a class="waves-effect waves-light btn"><i class="fas fa-star"></i></a>
+              </div>
+
+              <table>
+                <tr>
+                  <td class="description" i18n="@@td12Reporte">Nombre del incidente:</td>
+                  <td class="data">Auto mal estacionado</td>
+                </tr>
+                <tr>
+                  <td class="description" i18n="@@td13Reporte">Persona que lo reporta:</td>
+                  <td class="data">Diego Moreno</td>
+                </tr>
+                <tr>
+                  <th class="description" i18n="@@td14Reporte">Fecha del incidente:</th>
+                  <th class="data">12/02/2020</th>
+                </tr>
+                <tr>
+                  <th class="description" i18n="@@td15Reporte">Incidente:</th>
+                  <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+  </div>
 </section>
