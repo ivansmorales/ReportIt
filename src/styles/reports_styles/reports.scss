@@ -9,63 +9,70 @@ $main: #EDEDED;
 
 
 .li-sidebar {
-    color: #2f404e;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: center;
-    width: 100%;
-    border-radius: 0.3rem;
-    padding: 0.4rem;
-    font-size: 1.3rem;
-    
+  color: #2f404e;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  width: 100%;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  font-size: 1.3rem;
+
 }
 
-.li-sidebar:hover{
-    background-color: $jungleg;
-    color: $babypowder;
-    cursor: pointer;
+.li-sidebar:hover {
+  background-color: $jungleg;
+  color: $babypowder;
+  cursor: pointer;
 }
 
 body {
-    height: 100%;
-    background-color: $main;
-    font-family: 'Poppins', sans-serif;
-    #navbar {
-        img {
-            //width: 50%;
-            margin-left: 5.5rem;
-        }
-        .charcoal {
-            background-color: $charcoal;
+  height: 100%;
+  background-color: $main;
+  font-family: 'Poppins', sans-serif;
 
-        }
-        .right {
-            padding-right: 10rem;
-        }
+  #navbar {
+    img {
+      //width: 50%;
+      margin-left: 5.5rem;
+    }
+
+    .charcoal {
+      background-color: $charcoal;
 
     }
-    #main {
-        //padding-top: 2rem;
-        .lefty {
-            button {
-                width: 100%;
-                font-size: 1.3rem;
-                margin: 1rem 0 1rem 0;
-                background-color: $main;
-                color: $charcoal;
-                border: none;
-                cursor: pointer;
-                border-radius: 0.3rem;
-                padding: 0.4rem;
-            }
-            button:hover {
-                background-color: $jungleg;
-                color: $babypowder;
-            }
-        }
-        /*
+
+    .right {
+      padding-right: 10rem;
+    }
+
+  }
+
+  #main {
+
+    //padding-top: 2rem;
+    .lefty {
+      button {
+        width: 100%;
+        font-size: 1.3rem;
+        margin: 1rem 0 1rem 0;
+        background-color: $main;
+        color: $charcoal;
+        border: none;
+        cursor: pointer;
+        border-radius: 0.3rem;
+        padding: 0.4rem;
+      }
+
+      button:hover {
+        background-color: $jungleg;
+        color: $babypowder;
+      }
+    }
+
+    /*
         .line {
             //border-left: 0.1rem solid $charcoal;
             //height: 100%;
@@ -74,102 +81,128 @@ body {
             margin-left: -3px;
             top: 59px;
         }*/
-        .righty {
-            //border-left: 0.1rem solid $charcoal;
-            min-height: 100%;
-            height: 100%;
-            padding-top: 2rem;
-            #crear, #graficas {
-                background-color: white;
-                padding: 1rem;
-                margin-top: 3rem;
-                border-radius: 2rem;
-                border: 0.1rem solid black;
-                h1 {
-                    color: $jungleg;
-                    font-size: 2rem;
-                    font-weight: 600;
-                    text-align: center;
-                    margin: 1rem 0 0 0;
-                }
-                .center{
-                    margin: 0 auto;
-                }
-                .inside-container {
-                    padding: 1rem;
-                    .row-input {
-                        margin-left: 4rem;
-                        margin-right: 4rem;
-                    }
-                    .btn {
-                        width: 70%;
-                        text-transform: none;
-                        height: 80%;
-                    }
-                    .center-align {
-                        a {
-                            width: 39%;
-                            text-transform: none;
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
-          //  #reportes,
-          //  #historial,
-          //  #valorado {
-           //     display: none;
-            //}
-            #reportes {
-                .green {
-                    color: green;
-                }
-                .red {
-                    color: red;
-                }
-                a {
-                    margin-top: 1rem;
-                }
-            }
-            .report {
-                background-color: white;
-                padding: 1rem;
-                margin-top: 3rem;
-                border-radius: 2rem;
-                border: 0.1rem solid black;
-                .col-img {
-                    width: 40%;
-                }
-                .col-data {
-                    width: 60%;
-                }
-                .description {
-                    color: $jungleg;
-                    font-weight: 800;
-                    font-size: 1.1rem;
-                    width: 54%;
-                }
-                .data {
-                    color: $charcoal;
-                    font-size: 1rem;
-                    font-weight: 600;
-                }
-                img {
-                    width: 82%;
-                    margin: 2rem 0rem 1rem 2rem;
-                }
-            }
-            #graficas{
-                h1 {
-                    color: $jungleg;
-                    font-size: 2rem;
-                    font-weight: 600;
-                    text-align: center;
-                    margin: 1rem 0 0 0;
-                }
-            }
+    .righty {
+      //border-left: 0.1rem solid $charcoal;
+      min-height: 100%;
+      height: 100%;
+      padding-top: 2rem;
+
+      #editar,
+      #reportes_admin {
+        margin-left: 7rem;
+        width: 100%;
+      }
+
+      #crear,
+      #graficas,
+      #editar {
+        background-color: white;
+        padding: 1rem;
+        margin-top: 3rem;
+        border-radius: 2rem;
+        border: 0.1rem solid black;
+
+        h1 {
+          color: $jungleg;
+          font-size: 2rem;
+          font-weight: 600;
+          text-align: center;
+          margin: 1rem 0 0 0;
         }
+
+        .center {
+          margin: 0 auto;
+        }
+
+
+        .inside-container {
+          padding: 1rem;
+
+          .row-input {
+            margin-left: 4rem;
+            margin-right: 4rem;
+          }
+
+          .btn {
+            width: 70%;
+            text-transform: none;
+            height: 80%;
+          }
+
+          .center-align {
+            a {
+              width: 39%;
+              text-transform: none;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      //  #reportes,
+      //  #historial,
+      //  #valorado {
+      //     display: none;
+      //}
+      #reportes {
+        .green {
+          color: green;
+        }
+
+        .red {
+          color: red;
+        }
+
+        a {
+          margin-top: 1rem;
+        }
+      }
+
+      .report {
+        background-color: white;
+        padding: 1rem;
+        margin-top: 3rem;
+        border-radius: 2rem;
+        border: 0.1rem solid black;
+
+        .col-img {
+          width: 40%;
+        }
+
+        .col-data {
+          width: 60%;
+        }
+
+        .description {
+          color: $jungleg;
+          font-weight: 800;
+          font-size: 1.1rem;
+          width: 54%;
+        }
+
+        .data {
+          color: $charcoal;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        img {
+          width: 82%;
+          margin: 2rem 0rem 1rem 2rem;
+        }
+      }
+
+      #graficas {
+        h1 {
+          color: $jungleg;
+          font-size: 2rem;
+          font-weight: 600;
+          text-align: center;
+          margin: 1rem 0 0 0;
+        }
+      }
     }
+  }
 }
 
 
@@ -185,30 +218,31 @@ body {
 */
 
 @mixin mobile {
-    @media (max-width:#{$phone-width}) {
-        @content;
-    }
+  @media (max-width:#{$phone-width}) {
+    @content;
+  }
 }
 
 @mixin tablet_large {
-    @media (max-width:#{$large-tablet-max-width}) {
-        @content;
-    }
+  @media (max-width:#{$large-tablet-max-width}) {
+    @content;
+  }
 }
 
 @mixin tablet_small {
-    @media (min-width:#{$medium-tablet-max-width}) {
-        @content;
-    }
+  @media (min-width:#{$medium-tablet-max-width}) {
+    @content;
+  }
 }
 
 @include mobile {
-    .li-sidebar {
-        display: none;
-    }
-    .left-sidebar-nav {
-        display: none;
-    }
+  .li-sidebar {
+    display: none;
+  }
+
+  .left-sidebar-nav {
+    display: none;
+  }
 }
 
 @include tablet_large {}
