@@ -88,7 +88,9 @@ body {
       padding-top: 2rem;
 
       #editar,
-      #reportes_admin {
+      #reportes_admin,
+      #valorado,
+      #usuarios {
         margin-left: 7rem;
         width: 100%;
       }
@@ -139,11 +141,6 @@ body {
         }
       }
 
-      //  #reportes,
-      //  #historial,
-      //  #valorado {
-      //     display: none;
-      //}
       #reportes {
         .green {
           color: green;
@@ -193,6 +190,9 @@ body {
       }
 
       #graficas {
+        margin-left: 7rem;
+        width: 110%;
+
         h1 {
           color: $jungleg;
           font-size: 2rem;
