@@ -3,7 +3,7 @@ import { Report } from '../models/report';
 import { LogalStorageService } from '../services/logal-storage.service';
 
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { createWorker } from 'tesseract.js';
+//import { createWorker } from 'tesseract.js';
 
 @Component({
   selector: 'app-reports',
@@ -35,9 +35,12 @@ export class ReportsComponent implements OnInit {
     var img1 = document.createElement("img");
     img1.src = "src/assets/placas.png";
 
+
+    /*
     const worker = createWorker({
       logger: m => console.log(m)
     });
+    
     (async () => {
       await worker.load();
       await worker.loadLanguage('eng');
@@ -46,6 +49,7 @@ export class ReportsComponent implements OnInit {
       console.log(text);
       await worker.terminate();
     })();
+    */
 
 
   }

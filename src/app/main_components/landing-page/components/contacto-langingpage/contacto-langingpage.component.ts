@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
+import { LogalStorageService } from '../../../../userModule/services/logal-storage.service';
+import { Contacto } from '../../../models/contacto';
 
 @Component({
   selector: 'app-contacto-langingpage',
@@ -15,9 +17,19 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class ContactoLangingpageComponent implements OnInit {
 
-  constructor() { }
+  contactoModel =  new Contacto();
+
+  constructor(public localStorageService: LogalStorageService) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    this.localStorageService.storeOnLocalStorageContactoForm(this.contactoModel);
+  }
+  
+  load(){
+    this.contactoModel = this.localStorageService.readLocalStorageContactForm();
   }
 
 }

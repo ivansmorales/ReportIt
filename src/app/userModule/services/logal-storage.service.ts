@@ -2,6 +2,7 @@ import { Inject, Injectable } from '@angular/core';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import { User } from '../models/user';
 import { Report } from '../models/report';
+import { Contacto } from '../../main_components/models/contacto';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +11,7 @@ export class LogalStorageService {
 
   public userList: User;
   public reportList: Report;
+  public contactoList: Contacto;
 
   public graphList = [];
 
@@ -38,6 +40,21 @@ export class LogalStorageService {
   public readLocalStorageReports(): object{
     return this.storage.get('REPORT_LIST');
   }
+
+  public storeOnLocalStorageContactoForm(contacto: Contacto): void{
+    const contactoFormListStorage = this.storage.get('CONTACTOFORM_LIST') || [];
+    contactoFormListStorage.push(
+      {nombre: contacto.nombre, correo: contacto.correo, titulo: contacto.titulo, 
+      mensaje: contacto.mensaje });
+    this.storage.set('CONTACTOFORM_LIST', contactoFormListStorage);
+    this.contactoList = contactoFormListStorage;
+  }
+
+  public readLocalStorageContactForm(): object{
+    return this.storage.get('CONTACTOFORM_LIST');
+  }
+
+
 
   public storeOnLocalStorageAdmin(graph: string, xArray, yArray): void{
     const graphListStorage = this.storage.get('GRAPH_LIST') || [];

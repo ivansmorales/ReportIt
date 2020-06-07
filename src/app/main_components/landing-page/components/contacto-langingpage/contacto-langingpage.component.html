@@ -1,31 +1,31 @@
 <section class="contact" id="contact">
-    <h1 id="contactH1" i18n ="@@h1contacto" >Contáctanos</h1>
+    <h1 id="contactH1" i18n="@@h1contacto">Contáctanos</h1>
 
     <div class="mb-4 ">
-        <p class="text-center w-responsive mx-auto mb-5 " i18n ="@@pContacto"> Puedes dejarnos un mensaje en la siguiente caja y nos pondremos en contacto contigo.</p>
+        <p class="text-center w-responsive mx-auto mb-5 " i18n="@@pContacto"> Puedes dejarnos un mensaje en la siguiente caja y nos pondremos en contacto contigo.</p>
 
         <div class="row text-center ">
             <div class="col-md-9 mb-md-0 mb-5 ">
-                <form id="contact-form" name="contact-form " action="mail.php " method="POST">
+                <form id="contact-form" name="contact-form" #contactForm="ngForm" (ngSubmit)="onSubmit()">
                     <div class="form-row ">
                         <div class="form-group col-md-6 ">
-                            <label for="name" i18n ="@@labelContacto">Nombre</label>
-                            <input type="text" id="name" name="name" class="form-control" i18n-placeholder="Nombre">
+                            <label for="name" i18n="@@labelContacto">Nombre</label>
+                            <input type="text" id="name" name="name" class="form-control" i18n-placeholder="Nombre" [(ngModel)]="contactoModel.nombre">
                         </div>
                         <div class="form-group col-md-6 ">
-                            <label for="email" i18n ="@@label2Contacto">E-mail</label>
-                            <input type="email" id="email" name="email" class="form-control" i18n-placeholder="E-mail">
+                            <label for="email" i18n="@@label2Contacto">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" i18n-placeholder="E-mail" [(ngModel)]="contactoModel.correo">
                         </div>
                     </div>
                     <div class="form-group ">
-                        <label for="subject" i18n ="@@label3Contacto">Título</label>
-                        <input type="text" id="subject" name="subject" class="form-control" i18n-placeholder="Título">
+                        <label for="subject" i18n="@@label3Contacto">Título</label>
+                        <input type="text" id="subject" name="subject" class="form-control" i18n-placeholder="Título" [(ngModel)]="contactoModel.titulo">
                     </div>
                     <div class="form-group ">
-                        <label for="message" i18n ="@@label4Contacto">Mensaje</label>
-                        <textarea id="message" name="message" rows="2" class="form-control md-textarea" i18n-placeholder="Aquí escribe tu mensaje "></textarea>
+                        <label for="message" i18n="@@label4Contacto">Mensaje</label>
+                        <textarea id="message" name="message" rows="2" class="form-control md-textarea" i18n-placeholder="Aquí escribe tu mensaje " [(ngModel)]="contactoModel.mensaje"></textarea>
                     </div>
-                    <a  class="btn btn-success " onclick="document.getElementById( 'contact-form').submit(); ">Enviar</a>
+                    <a class="btn btn-success " (click)="onSubmit()">Enviar</a>
                 </form>
             </div>
 
@@ -35,7 +35,7 @@
                         <p>Tecnológico de Monterrey Campus Ciudad de México</p>
                     </li>
                     <li><i class="icon fas fa-phone mt-4 fa-2x "></i>
-                        <p >+ 55 5483 2020</p>
+                        <p>+ 55 5483 2020</p>
                     </li>
                     <li><i class="icon fas fa-envelope mt-4 fa-2x "></i>
                         <p>contact@reportit.com</p>
