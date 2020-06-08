@@ -17,6 +17,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class ReportsComponent implements OnInit {
 
+  reports: Report = this.localStorageService.readLocalStorageReports(); 
+  
   public divCrear = false;
   public divReportes = true;
   public divHistorial = true;
