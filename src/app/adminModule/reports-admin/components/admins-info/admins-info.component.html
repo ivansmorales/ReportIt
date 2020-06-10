@@ -2,21 +2,38 @@
 <form class="col s12">
     <div class="row row-input">
         <div class="input-field col s12">
-            <input placeholder="Nombre" id="nombre" type="text" class="validate">
+            <input #adminName placeholder="Nombre" id="nombre" type="text" class="validate">
         </div>
         <div class="input-field col s12">
-            <input placeholder="Email" id="mail" type="text" class="validate">
+            <input #adminMail placeholder="Email" id="mail" type="text" class="validate">
         </div>
         <div class="input-field col s12">
-            <input placeholder="Contraseña" id="password" type="text" class="validate">
+            <input #adminPassword placeholder="Contraseña" id="password" type="text" class="validate">
         </div>
     </div>
+    <a class="waves-effect waves-light btn" (click)="addAdmin(adminName.value, adminMail.value, adminPassword.value); ">Agregar admin</a>
+    <br><br><br><br>
 </form>
 <h2 class="simple-header">Editar admin</h2>
+<form class="col s12">
+    <div class="row row-input">
+        <div class="input-field col s12">
+            <input #adminName placeholder="Nombre" id="nombre" type="text" class="validate">
+        </div>
+        <div class="input-field col s12">
+            <input #adminMail placeholder="Email" id="mail" type="text" class="validate">
+        </div>
+        <div class="input-field col s12">
+            <input #adminPassword placeholder="Contraseña" id="password" type="text" class="validate">
+        </div>
+    </div>
+    <a class="waves-effect waves-light btn" (click)="addAdmin(adminName.value, adminMail.value, adminPassword.value); ">Editar admin</a>
+    <br><br><br><br>
+</form>
 <h2 class="simple-header">Borrar admin</h2>
 <h2 class="simple-header">Ver admins</h2>
 <div class="center">
-    <table>
+    <table class="responsive-table">
         <thead>
           <th>Nombre</th>
           <th>Correo</th>

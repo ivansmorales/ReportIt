@@ -17,6 +17,10 @@ export class AdminService {
 
   endpoint = 'http://localhost:8080/api/admins';
 
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+
   constructor(private http: HttpClient) { }
 
   private extraData(res : Response){
@@ -28,13 +32,16 @@ export class AdminService {
     return this.http.get(this.endpoint).pipe(map(this.extraData), retry(3));
   }
 
-  addAdmin(admin: Admin){
-    this.admins.push(admin);
+  //getAdmin(id: number): Observable<any>{ }
+
+  addAdmin(admin: Admin): Observable<any>{
+    return this.http.post(this.endpoint, admin).pipe(map(this.extraData));
   }
 
   deleteAdmin(admin: Admin){
     this.admins.splice(1, 0);
   }
+  
 
   /* Método para descargar reportes */
   /* Método para editar reportes */

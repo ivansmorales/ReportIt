@@ -30,5 +30,15 @@ export class AdminsInfoComponent implements OnInit {
     //console.log(this.adminService.getAdmins());
   }
 
+  addAdmin(nombre: string, correo: string, contrasena: string): void {
+    nombre = nombre.trim();
+    if (!nombre || !correo || !contrasena) { 
+      return; 
+    }
+    this.admins = this.adminService.addAdmin({ nombre, correo, contrasena } as Admin)
+      .subscribe(admin => {
+        this.admins.push(admin);
+      });
+  }
 
 }
