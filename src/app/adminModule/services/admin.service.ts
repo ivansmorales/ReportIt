@@ -38,8 +38,11 @@ export class AdminService {
     return this.http.post(this.endpoint, admin).pipe(map(this.extraData));
   }
 
-  deleteAdmin(admin: Admin){
-    this.admins.splice(1, 0);
+  deleteAdmin(admin: Admin | number): Observable<any> {
+    const id = typeof admin === 'number' ? admin : admin.id;
+    const url = `${this.endpoint}/${id}`;
+  
+    return this.http.delete(url, this.httpOptions).pipe(map(this.extraData));
   }
   
 

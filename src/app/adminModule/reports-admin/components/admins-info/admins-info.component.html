@@ -30,20 +30,38 @@
     <a class="waves-effect waves-light btn" (click)="addAdmin(adminName.value, adminMail.value, adminPassword.value); ">Editar admin</a>
     <br><br><br><br>
 </form>
-<h2 class="simple-header">Borrar admin</h2>
+<!--
+
+    <h2 class="simple-header">Borrar admin</h2>
+    <form class="col s12">
+        <div class="row row-input">
+            <div class="input-field col s12">
+                <input #adminId placeholder="Id" id="_id" type="text" class="validate">
+            </div>
+        </div>
+        <a class="waves-effect waves-light btn" (click)="deleteAdmin(adminId.value)">Eliminar admin</a>
+    </form>
+    <br><br><br><br>
+-->
 <h2 class="simple-header">Ver admins</h2>
 <div class="center">
     <table class="responsive-table">
         <thead>
+          <th>Id</th>
           <th>Nombre</th>
           <th>Correo</th>
           <th>Contraseña</th>
+          <th></th>
         </thead>
         <tbody>
           <tr *ngFor="let i of admins">
+            <td>{{ i._id }}</td>
             <td>{{ i.nombre }}</td>
             <td>{{ i.correo }}</td>
             <td>{{ i.contrasena }}</td>
+            <!--
+                <td><a class="waves-effect waves-light btn" (click)="delete(i._id)">X</a></td>
+            -->
           </tr>
         </tbody>
     </table>

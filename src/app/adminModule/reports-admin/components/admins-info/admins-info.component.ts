@@ -41,4 +41,9 @@ export class AdminsInfoComponent implements OnInit {
       });
   }
 
+  delete(admin : Admin): void {
+    this.admins = this.admins.filter(h => h !== admin);
+    this.adminService.deleteAdmin(admin).subscribe();
+  }
+
 }
