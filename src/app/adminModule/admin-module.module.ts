@@ -14,15 +14,18 @@ import { CreateGraphComponent } from './reports-admin/components/create-graph/cr
 
 import {StorageServiceModule} from 'ngx-webstorage-service';
 
+import { HttpClientModule } from '@angular/common/http';
+import { AdminsInfoComponent } from './reports-admin/components/admins-info/admins-info.component';
 
 @NgModule({
   declarations: [LoginAdminComponent, FormLoginComponent, HeaderAdminComponent,
     ReportsAdminComponent, FooterAdminComponent,
-    HeaderLoginComponent, GraphsAdminComponent, CreateGraphComponent],
+    HeaderLoginComponent, GraphsAdminComponent, CreateGraphComponent, AdminsInfoComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
-    StorageServiceModule
+    StorageServiceModule,
+    HttpClientModule
   ]
 })
 export class AdminModuleModule { }

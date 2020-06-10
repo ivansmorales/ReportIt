@@ -65,7 +65,9 @@
         </li>
         <li class="li-sidebar" (click)="verUsuarios()" i18n="@@p10Out">
           <i class="fas fa-users"></i> &nbsp;&nbsp; Usuarios
-
+        </li>
+        <li class="li-sidebar" (click)="verAdmins()">
+          <i class="fas fa-users"></i> &nbsp;&nbsp; Admins
         </li>
         <li class="li-sidebar" (click)="verGraficas()" i18n="@@p11Out">
           <i class="fas fa-chart-pie"></i> Estadisticas
@@ -209,6 +211,11 @@
             </div>
           </div>
         </div>
+      </div>
+      <div [hidden]="divAdmins" id="admins" class="container center">
+        <h1>Administradores</h1>
+        <br><br>
+        <app-admins-info></app-admins-info>
       </div>
       <div [hidden]="divGraphs" id="graficas" class="container center">
         <h1 i18n="@@h180Out">Gestión de estadísticas</h1>

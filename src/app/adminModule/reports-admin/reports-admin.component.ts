@@ -3,6 +3,8 @@ import { UserService } from '../../userModule/services/user.service';
 import { User } from '../../userModule/models/user';
 import { LogalStorageService } from '../../userModule/services/logal-storage.service';
 import { Report} from '../../userModule/models/report';
+
+
 @Component({
   selector: 'app-reports-admin',
   templateUrl: './reports-admin.component.html',
@@ -15,6 +17,7 @@ export class ReportsAdminComponent implements OnInit {
   public divEditar = true;
   public divValorado = true;
   public divUsers = true;
+  public divAdmins = true;
   public divGraphs = true;
   public createGraphs = true;
   public graphsAdmin = true;
@@ -44,6 +47,7 @@ export class ReportsAdminComponent implements OnInit {
     this.divValorado = true;
     this.divEditar = true;
     this.divUsers = true;
+    this.divAdmins = true;
     this.divGraphs = true;
   }
 
@@ -52,6 +56,7 @@ export class ReportsAdminComponent implements OnInit {
     this.divReportes = true;
     this.divValorado = true;
     this.divUsers = true;
+    this.divAdmins = true;
     this.divGraphs = true;
   }
 
@@ -60,6 +65,7 @@ export class ReportsAdminComponent implements OnInit {
     this.divReportes = true;
     this.divValorado = false;
     this.divUsers = true;
+    this.divAdmins = true;
     this.divGraphs = true;
   }
 
@@ -68,6 +74,16 @@ export class ReportsAdminComponent implements OnInit {
     this.divReportes = true;
     this.divValorado = true;
     this.divUsers = false;
+    this.divAdmins = true;
+    this.divGraphs = true;
+  }
+
+  verAdmins(){
+    this.divEditar = true;
+    this.divReportes = true;
+    this.divValorado = true;
+    this.divUsers = true;
+    this.divAdmins = false;
     this.divGraphs = true;
   }
 
@@ -76,6 +92,7 @@ export class ReportsAdminComponent implements OnInit {
     this.divReportes = true;
     this.divValorado = true;
     this.divUsers = true;
+    this.divAdmins = true;
     this.divGraphs = false;
   }
 

@@ -1,17 +1,31 @@
 import { Injectable } from '@angular/core';
 import {Admin} from '../models/admin';
 
+import { Observable, of, throwError } from 'rxjs';
+
+import { HttpClient, HttpHeaders, 
+        HttpResponse, HttpErrorResponse} from '@angular/common/http';
+
+import { map, retry, catchError, tap} from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root'
 })
 export class AdminService {
 
-  admins = [new Admin('Administrador', 'id') ];
+  admins;
 
-  constructor() { }
+  endpoint = 'http://localhost:8080/api/admins';
 
-  getAdmins(): Admin[]{
-    return this.admins;
+  constructor(private http: HttpClient) { }
+
+  private extraData(res : Response){
+    let body = res;
+    return body || {};
+  }
+
+  getAdmins(): Observable<any>{
+    return this.http.get(this.endpoint).pipe(map(this.extraData), retry(3));
   }
 
   addAdmin(admin: Admin){

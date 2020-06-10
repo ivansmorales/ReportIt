@@ -1,10 +1,9 @@
 export class Admin {
 
-    public correo?: string;
-    public contraseña?: string;
-
     constructor(
+        public id?: string,
         public nombre?: string,
-        public id?: string
+        public correo?: string,
+        public contrasena?: string
     ){}
 }

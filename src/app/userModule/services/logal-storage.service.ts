@@ -2,6 +2,7 @@ import { Inject, Injectable } from '@angular/core';
 import {LOCAL_STORAGE, StorageService} from 'ngx-webstorage-service';
 import { User } from '../models/user';
 import { Report } from '../models/report';
+import { Admin } from '../../adminModule/models/admin';
 import { Contacto } from '../../main_components/models/contacto';
 
 @Injectable({
@@ -11,6 +12,7 @@ export class LogalStorageService {
 
   public userList: User;
   public reportList: Report;
+  public adminList: Admin;
   public contactoList: Contacto;
 
   public graphList = [];
@@ -54,7 +56,17 @@ export class LogalStorageService {
     return this.storage.get('CONTACTOFORM_LIST');
   }
 
+  public storeOnLocalStorageAdminM(admin : Admin): void{
+    const adminListStorage = this.storage.get('ADMIN_LIST') || [];
+    adminListStorage.push({nombre: admin.nombre, correo: admin.correo, contrasena: admin.contrasena});
+    this.storage.set('ADMIN_LIST', adminListStorage);
+    this.adminList = adminListStorage;
 
+  }
+
+  public readLocalStorageAdminM(): object{
+    return this.storage.get('ADMIN_LIST');
+  }
 
   public storeOnLocalStorageAdmin(graph: string, xArray, yArray): void{
     const graphListStorage = this.storage.get('GRAPH_LIST') || [];
