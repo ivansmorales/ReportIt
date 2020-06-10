@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AdminService } from '../../../services/admin.service';
 import { Admin } from '../../../models/admin';
-
 import {LogalStorageService} from '../../../../userModule/services/logal-storage.service';
 
 
@@ -20,14 +19,14 @@ export class AdminsInfoComponent implements OnInit {
   constructor(public adminService: AdminService, public localStorageService: LogalStorageService) { }
 
   ngOnInit(): void {
+    this.getAdmins();
   }
 
-  onSubmit(){
-    this.localStorageService.storeOnLocalStorage(this.adminModel);
-  }
-
-  getUsers(){
-    this.adminService.getAdmins();
+  getAdmins(){
+    this.admins = this.adminService.getAdmins().subscribe((data: {}) => {
+      this.admins = data;
+      console.log('respuesta ->' + this.admins);
+    })
     //console.log(this.adminService.getAdmins());
   }
 

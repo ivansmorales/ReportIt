@@ -1,4 +1,4 @@
-<p>Agregar admin</p>
+<h2 class="simple-header">Agregar admin</h2>
 <form class="col s12">
     <div class="row row-input">
         <div class="input-field col s12">
@@ -12,6 +12,22 @@
         </div>
     </div>
 </form>
-<p>Editar admin</p>
-<p>Borrar admin</p>
-<p>Ver admins</p>
+<h2 class="simple-header">Editar admin</h2>
+<h2 class="simple-header">Borrar admin</h2>
+<h2 class="simple-header">Ver admins</h2>
+<div class="center">
+    <table>
+        <thead>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Contraseña</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of admins">
+            <td>{{ i.nombre }}</td>
+            <td>{{ i.correo }}</td>
+            <td>{{ i.contrasena }}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
