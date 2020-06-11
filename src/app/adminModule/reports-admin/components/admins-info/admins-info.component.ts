@@ -41,9 +41,9 @@ export class AdminsInfoComponent implements OnInit {
       });
   }
 
-  delete(admin : Admin): void {
-    this.admins = this.admins.filter(h => h !== admin);
-    this.adminService.deleteAdmin(admin).subscribe();
+  delete(id: string): void {
+    this.adminService.deleteAdmin({id}).subscribe();
+    alert("Usuario borrado, recarga la pagina para ver la nueva lista");
   }
 
 }

@@ -38,11 +38,15 @@ export class AdminService {
     return this.http.post(this.endpoint, admin).pipe(map(this.extraData));
   }
 
+  //updateAdmin(admin: Admin):Observable<any>{}
+
   deleteAdmin(admin: Admin | number): Observable<any> {
     const id = typeof admin === 'number' ? admin : admin.id;
     const url = `${this.endpoint}/${id}`;
   
-    return this.http.delete(url, this.httpOptions).pipe(map(this.extraData));
+    return this.http.delete<any>(url, this.httpOptions).pipe(
+      tap(_ => console.log(`Admin borrado id=${id}`))
+    );
   }
   
 
