@@ -38,7 +38,11 @@ export class AdminService {
     return this.http.post(this.endpoint, admin).pipe(map(this.extraData));
   }
 
-  //updateAdmin(admin: Admin):Observable<any>{}
+  updateAdmin(admin: Admin): Observable<any> {
+    return this.http.put(this.endpoint, admin, this.httpOptions).pipe(
+      tap(_ => console.log(`Admin actualizado id=${admin.id}`))
+    );
+  }
 
   deleteAdmin(admin: Admin | number): Observable<any> {
     const id = typeof admin === 'number' ? admin : admin.id;
@@ -48,7 +52,6 @@ export class AdminService {
       tap(_ => console.log(`Admin borrado id=${id}`))
     );
   }
-  
 
   /* Método para descargar reportes */
   /* Método para editar reportes */

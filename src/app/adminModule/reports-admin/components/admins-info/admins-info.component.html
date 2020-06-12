@@ -18,6 +18,9 @@
 <form class="col s12">
     <div class="row row-input">
         <div class="input-field col s12">
+            <input #adminId placeholder="Id" id="id" type="text" class="validate">
+        </div>
+        <div class="input-field col s12">
             <input #adminName placeholder="Nombre" id="nombre" type="text" class="validate">
         </div>
         <div class="input-field col s12">
@@ -27,7 +30,7 @@
             <input #adminPassword placeholder="Contraseña" id="password" type="text" class="validate">
         </div>
     </div>
-    <a class="waves-effect waves-light btn" (click)="addAdmin(adminName.value, adminMail.value, adminPassword.value); ">Editar admin</a>
+    <a class="waves-effect waves-light btn" (click)="updateAdmin(adminId.value, adminName.value, adminMail.value, adminPassword.value); ">Editar admin</a>
     <br><br><br><br>
 </form>
 <!--
