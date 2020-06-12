@@ -20,6 +20,50 @@ export class FormRegisteruserComponent implements OnInit {
 
   userModel = new User();
 
+  users;
+
+  constructor(private userService: UserService, public localStorageService: LogalStorageService) { }
+
+  ngOnInit(): void {// this.localStorageService.storeOnLocalStorage(new User("EjemploNombre","EjemploMail","EjemplPassword"));
+    // this.localStorageService.readLocalStorage();
+    this.getUsers();
+  }
+  onSubmit(){
+    this.localStorageService.storeOnLocalStorage(this.userModel);
+  }
+
+  getUsers(): void{
+    //this.userService.getUsers();;
+    this.users = this.userService.getUser().subscribe((data: {}) =>{
+      this.users = data;
+      console.log('respuesta->' +  this.users);
+
+    });
+  }
+
+  
+  addUsers(nombre: string, correo: string, contrasena: string): void{
+    nombre = nombre.trim();
+    if (!nombre || !correo || !contrasena) { 
+      return; 
+    }
+    this.users = this.userService.addUser({ nombre, correo, contrasena } as User)
+      .subscribe(user => {
+        this.users.push(user);
+      });
+
+      alert("Se agregó el usuario");
+  }
+  
+
+  load(){
+    this.userModel = this.localStorageService.readLocalStorage();
+  }
+
+
+  /*
+  userModel = new User();
+
   usuarios;
 
   constructor(private userService: UserService, public localStorageService: LogalStorageService) { }
@@ -37,5 +81,6 @@ export class FormRegisteruserComponent implements OnInit {
   load(){
     this.userModel = this.localStorageService.readLocalStorage();
   }
+  */
 
 }

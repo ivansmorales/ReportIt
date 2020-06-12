@@ -17,6 +17,7 @@ import { ReportsComponent} from './reports/reports.component';
 
 // Local storage
 import {StorageServiceModule} from 'ngx-webstorage-service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [RegisterUserComponent, LogInUserComponent, ReportsComponent,
@@ -26,7 +27,8 @@ import {StorageServiceModule} from 'ngx-webstorage-service';
     CommonModule,
     UserRoutingModule,
     FormsModule,
-    StorageServiceModule
+    StorageServiceModule,
+    HttpClientModule
 
   ]
 })
