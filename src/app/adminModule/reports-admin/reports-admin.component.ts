@@ -26,10 +26,19 @@ export class ReportsAdminComponent implements OnInit {
 
   user: User = this.localStorageService.readLocalStorage();
 
+  users;
+
   ngOnInit(): void {
-    // this.getUsers();
+    
+    this.getUsers();
     // this.localStorageService.readLocalStorage();
     // this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
+  }
+
+
+  delete(id: string): void {
+    this.userService.deleteUser({id}).subscribe();
+    alert("Usuario borrado, recarga la pagina para ver la nueva lista");
   }
 
   /*
@@ -41,6 +50,14 @@ export class ReportsAdminComponent implements OnInit {
     this.users = this.userService.getUsers();
   }
   */
+
+ getUsers(){
+  this.users = this.userService.getUser().subscribe((data: {}) => {
+    this.users = data;
+    console.log('respuesta ->' + this.user);
+  })
+  //console.log(this.adminService.getAdmins());
+}
 
   verReportes(){
     this.divReportes = false;

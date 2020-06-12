@@ -36,6 +36,14 @@ export class UserService {
 
   }
 
+  deleteUser(user: User | number): Observable<any> {
+    const id = typeof user === 'number' ? user : user.id;
+    const url = `${this.endPoint}/${id}`;
+  
+    return this.http.delete<any>(url, this.httpOptions).pipe(
+      tap(_ => console.log(`User borrado id=${id}`))
+    );
+  }
  
 
    /* users = [new User("Usuario", "id", (new Report("Titulo reporte","Nombre que hace el reporte",
