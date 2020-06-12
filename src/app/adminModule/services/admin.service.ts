@@ -39,7 +39,7 @@ export class AdminService {
   }
 
   updateAdmin(admin: Admin): Observable<any> {
-    return this.http.put(this.endpoint, admin, this.httpOptions).pipe(
+    return this.http.put<any>(this.endpoint + '/' + admin.id, this.httpOptions).pipe(
       tap(_ => console.log(`Admin actualizado id=${admin.id}`))
     );
   }
