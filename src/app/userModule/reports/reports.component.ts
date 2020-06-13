@@ -18,7 +18,7 @@ import { ReportService } from '../services/report.service';
 })
 export class ReportsComponent implements OnInit {
 
-  reports: Report = this.localStorageService.readLocalStorageReports();
+  //reports: Report = this.localStorageService.readLocalStorageReports();
   
   public divCrear = false;
   public divReportes = true;
@@ -35,6 +35,7 @@ export class ReportsComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.getReports();
 
   }
 
@@ -76,6 +77,7 @@ export class ReportsComponent implements OnInit {
     alert("Usuario borrado, recarga la pagina para ver la nueva lista");
   }
 
+  /*
   onSubmit() {
     this.localStorageService.storeOnLocalStorageReports(this.reportModel);
 
@@ -99,9 +101,9 @@ export class ReportsComponent implements OnInit {
       console.log(text);
       await worker.terminate();
     })();
-    */
-
+    
   }
+  */
 
 
   verCrear() {
