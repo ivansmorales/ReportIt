@@ -101,7 +101,7 @@
                   <div class="file-field input-field">
                     <div class="btn">
                       <span i18n>Insertar foto</span>
-                      <input type="file" accept="image/png, image/jpeg, image/jpg" id="recognition-image-input"  #reportFoto>
+                      <input type="file" accept="image/png, image/jpeg, image/jpg" id="recognition-image-input"  (change)="onFileChange($event)">
                     </div>
                     <div class="file-path-wrapper">
                       <input class="file-path validate" type="text">
@@ -111,7 +111,7 @@
               </div>
             </div>
             <div class="center-align">
-              <a class="waves-effect waves-light btn-small " (click)="addReport(reportTitulo.value, reportNombre.value, reportFecha.value, reportDescripcion.value, reportFoto.value);" i18n="@@a0Reporte">Publicar</a>
+              <a class="waves-effect waves-light btn-small " (click)="addReport(reportTitulo.value, reportNombre.value, reportFecha.value, reportDescripcion.value);" i18n="@@a0Reporte">Publicar</a>
             </div>
           </form>
         </div>
@@ -120,9 +120,6 @@
 
         <div class="report" *ngFor="let variableReports of reports">
             <div class="row">
-                <div class="col s6 col-img">
-                    <img src="assets/img/estacionado.jpg" alt="">
-                </div>
                 <div class="col s6 col-data">
                     <table>
                         <tr>
@@ -141,6 +138,10 @@
                             <th class="description" i18n="@@thReporte">Incidente:</th>
                             <th class="data">{{variableReports.descripcion}}</th>
                         </tr>
+                        <tr>
+                          <th class="description" i18n="@@thReporte">Placas:</th>
+                          <th class="data">{{variableReports.foto}}</th>
+                      </tr>
                     </table>
                 </div>
                 <div class="center-align">

@@ -33,7 +33,13 @@ export class ReportService {
   //getAdmin(id: number): Observable<any>{ }
 
   addReport(report: Report): Observable<any>{
-    return this.http.post(this.endpoint, report).pipe(map(this.extraData));
+    const formData = new FormData();
+    formData.append('nombre', report.nombre);
+    formData.append('titulo', report.titulo);
+    formData.append('fecha', report.fecha);
+    formData.append('descripcion', report.descripcion);
+    formData.append('foto', report.foto);
+    return this.http.post(this.endpoint, formData).pipe(map(this.extraData));
   }
 
   updateReport(report: Report): Observable<any> {

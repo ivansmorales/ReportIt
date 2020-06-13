@@ -32,7 +32,7 @@ export class ReportsComponent implements OnInit {
   }
 
   report;
-
+  image;
 
   ngOnInit(): void {
 
@@ -47,18 +47,22 @@ export class ReportsComponent implements OnInit {
     //console.log(this.adminService.getAdmins());
   }
 
-  addReport(titulo: string, nombre: string, fecha, descripcion: string, foto): void {
+  onFileChange(event){
+    if(event.target.files.length > 0){
+      this.image = event.target.files[0];
+    }
+  }
+
+
+  addReport(titulo: string, nombre: string, fecha, descripcion: string): void {
     nombre = nombre.trim();
-    if (!nombre || !titulo || !fecha || !descripcion || !foto)  { 
+    if (!nombre || !titulo || !fecha || !descripcion)  { 
       return; 
     }
-    this.report = this.reportService.addReport({ nombre, titulo, fecha, descripcion, foto} as Report)
-
+    this.report = this.reportService.addReport({ nombre, titulo, fecha, descripcion, foto:this.image} as Report)
       .subscribe(reports => {
         this.report.push(reports);
       });
-      
-  
       alert("Reporte agregado");
   }
 
