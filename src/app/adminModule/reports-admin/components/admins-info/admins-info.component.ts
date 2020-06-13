@@ -43,7 +43,7 @@ export class AdminsInfoComponent implements OnInit {
   }
 
   updateAdmin(id: string, nombre: string, correo: string, contrasena: string): void {
-    this.admins = this.adminService.updateAdmin({id, nombre, correo, contrasena}).subscribe(admin => {
+    this.adminService.updateAdmin({id, nombre, correo, contrasena}).subscribe(admin => {
         this.admins.push(admin);
       });
     alert("Admin editado");

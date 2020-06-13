@@ -127,57 +127,30 @@
                         <p i18n="@@p16Out"> Descargar </p>
                     </a>
                 </div>
-                <div class="report">
+                <div class="report" *ngFor="let variableReports of report">
                     <div class="row">
-                        <div class="col s6 col-img">
-                            <img src="assets/img/estacionado.jpg" alt="">
-                        </div>
-                        <div class="col s6 col-data">
+                        <div class="col s12 col-data">
                             <table>
                                 <tr>
-                                    <td class="description" i18n="@@td1Out">Nombre del incidente:</td>
-                                    <td class="data">Auto mal estacionado</td>
+                                    <td class="description" i18n="@@tdReporte">Nombre del incidente:</td>
+                                    <td class="data">{{variableReports.titulo}}</td>
                                 </tr>
                                 <tr>
-                                    <td class="description" i18n="@@td2Out">Persona que lo reporta:</td>
-                                    <td class="data">Diego Moreno</td>
+                                    <td class="description" i18n="@@td2Reporte">Persona que lo reporta:</td>
+                                    <td class="data">{{variableReports.nombre}}</td>
                                 </tr>
                                 <tr>
-                                    <th class="description" i18n="@@th1Out">Fecha del incidente:</th>
-                                    <th class="data">12/02/2020</th>
+                                    <th class="description" i18n="@@td3Reporte">Fecha del incidente:</th>
+                                    <th class="data">{{variableReports.fecha}}</th>
                                 </tr>
                                 <tr>
-                                    <th class="description" i18n="@@th2Out">Incidente:</th>
-                                    <th class="data">En la calle Prolongación Miramontes hay un auto mal estacionado.
-                                    </th>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="report">
-                    <div class="row">
-                        <div class="col s6 col-img">
-                            <img src="assets/img/bache2.png" alt="">
-                        </div>
-                        <div class="col s6 col-data">
-                            <table>
-                                <tr>
-                                    <th class="description" i18n="@@th3Out">Nombre del incidente:</th>
-                                    <th class="data">Bache</th>
+                                    <th class="description" i18n="@@thReporte">Incidente:</th>
+                                    <th class="data">{{variableReports.descripcion}}</th>
                                 </tr>
                                 <tr>
-                                    <th class="description" i18n="@@th4Out">Persona que lo reporta:</th>
-                                    <th class="data">Ivan Morales</th>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n="@@th5Out">Fecha del incidente:</th>
-                                    <th class="data">13/02/2020</th>
-                                </tr>
-                                <tr>
-                                    <th class="description" i18n="@@th6Out">Incidente:</th>
-                                    <th class="data">En la calle Prolongación Miramontes hay un bache.</th>
-                                </tr>
+                                  <th class="description" i18n="@@thReporte">Placas:</th>
+                                  <th class="data">{{variableReports.foto}}</th>
+                              </tr>
                             </table>
                         </div>
                     </div>

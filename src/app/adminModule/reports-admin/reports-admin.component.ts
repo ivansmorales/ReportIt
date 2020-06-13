@@ -3,7 +3,7 @@ import { UserService } from '../../userModule/services/user.service';
 import { User } from '../../userModule/models/user';
 import { LogalStorageService } from '../../userModule/services/logal-storage.service';
 import { Report} from '../../userModule/models/report';
-
+import { ReportService } from '../../userModule/services/report.service';
 
 @Component({
   selector: 'app-reports-admin',
@@ -22,14 +22,15 @@ export class ReportsAdminComponent implements OnInit {
   public createGraphs = true;
   public graphsAdmin = true;
 
-  constructor(public userService: UserService, public localStorageService: LogalStorageService) { }
+  constructor(public userService: UserService, public localStorageService: LogalStorageService, public reportService: ReportService) { }
 
   user: User = this.localStorageService.readLocalStorage();
 
   users;
+  report;
 
   ngOnInit(): void {
-    
+    this.getReports();
     this.getUsers();
     // this.localStorageService.readLocalStorage();
     // this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
@@ -57,7 +58,15 @@ export class ReportsAdminComponent implements OnInit {
     console.log('respuesta ->' + this.user);
   })
   //console.log(this.adminService.getAdmins());
-}
+  }
+
+  getReports(){
+    this.report = this.reportService.getReport().subscribe((data: {}) => {
+      this.report = data;
+      console.log('respuesta ->' + this.report);
+    })
+    //console.log(this.adminService.getAdmins());
+  }
 
   verReportes(){
     this.divReportes = false;
