@@ -2,6 +2,7 @@
 
 
 Miembros del proyecto:
+
 [Diego Moreno](https://github.com/DiegoMoreno1110) | A01337594
 
 [Alexandra Solis](https://github.com/aleesolish) | A01650803
