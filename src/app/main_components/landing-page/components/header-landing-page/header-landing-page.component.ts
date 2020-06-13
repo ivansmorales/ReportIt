@@ -19,4 +19,8 @@ export class HeaderLandingPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleDisplay() {
+    let div = document.getElementById("navbarTogglerDemo03").style.display = "block";
+  }
+
 }
