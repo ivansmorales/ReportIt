@@ -55,12 +55,15 @@
         <li (click)="verReportes()" class="li-sidebar" i18n="@@li2Reporte">
           <i class="fas fa-comment-alt"></i> Reportes
         </li>
-        <li (click)="verHistorial()" class="li-sidebar" i18n="@@li3Reporte">
-          <i class="fas fa-history"></i> Historial
-        </li>
-        <li (click)="verValorado()" class="li-sidebar" i18n="@@li4Reporte">
-          <i class="fas fa-star"></i> Valorado
-        </li>
+        <!--
+          
+          <li (click)="verHistorial()" class="li-sidebar" i18n="@@li3Reporte">
+            <i class="fas fa-history"></i> Historial
+          </li>
+          <li (click)="verValorado()" class="li-sidebar" i18n="@@li4Reporte">
+            <i class="fas fa-star"></i> Valorado
+          </li>
+        -->
       </ul>
 
     </aside>
@@ -73,28 +76,24 @@
             <div class="row row-input">
               <div class="input-field col s12">
                 <!-- <input id="title" name ="titulo" type="text" class="validate form-control"> -->
-                <input id="titulo" name="firstname" type="text" class="validate form-control"
-                   #reportTitulo>
-                <label for="titulo" i18n="@@labReporte">Título</label>
+                <input id="titulo" name="firstname" type="text" class="validate form-control placeholder"
+                   #reportTitulo placeholder="Titulo">
               </div>
             </div>
             <div class="row row-input">
               <div class="input-field col s6">
-                <input id="first_name" name="firstname" type="text" class="validate form-control"
-                   #reportNombre>
-                <label for="first_name" i18n="@@lab1Reporte">Nombre</label>
+                <input id="first_name" name="firstname" type="text" class="validate form-control placeholder"
+                   #reportNombre placeholder="Persona que lo reporta">
               </div>
               <div class="input-field col s6">
-                <input id="last_name" name="fecha" type="text" class="validate form-control"
-                   #reportFecha>
-                <label for="last_name" i18n="@@lab3Reporte">Fecha</label>
+                <input id="last_name" name="fecha" type="text" class="validate form-control placeholder"
+                   #reportFecha placeholder="Fecha">
               </div>
             </div>
             <div class="row row-input">
               <div class="input-field col s6">
-                <textarea id="textarea1" name="descripcion" class="materialize-textarea form-control"
-                   #reportDescripcion></textarea>
-                <label for="textarea1" i18n="@@lab4Reporte">Descripción del reporte</label>
+                <textarea id="textarea1" name="descripcion" class="materialize-textarea form-control placeholder"
+                   #reportDescripcion placeholder="descripcion"></textarea>
               </div>
               <div class="input-field col s6">
                 <form action="#">
@@ -148,6 +147,7 @@
         </div>
 
     </div>
+    <!--
       <div [hidden]="divHistorial" id="historial" class="container">
         <div class="report">
           <div class="row">
@@ -215,7 +215,7 @@
           </div>
         </div>
       </div>
+    -->
     </div>
-
   </div>
 </section>
