@@ -4,11 +4,11 @@ export class Report {
     public dislikes?: number;
 
     constructor(
+        public id?: string,
         public titulo?: string,
         public nombre?: string,
         public fecha?,
         public descripcion?: string,
-        public foto?,
-        public hora?
+        public foto?
     ){}
 }

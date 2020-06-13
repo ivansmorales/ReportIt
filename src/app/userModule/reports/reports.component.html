@@ -69,31 +69,31 @@
       <div [hidden]="divCrear" id="crear" class="container">
         <h1 i18n="@@h12Reporte">Reporte de Incidencias</h1>
         <div class="row inside-container">
-          <form class="col s12" reportCreateForm="ngform">
+          <form class="col s12" enctype="multipart/form-data" >
             <div class="row row-input">
               <div class="input-field col s12">
                 <!-- <input id="title" name ="titulo" type="text" class="validate form-control"> -->
                 <input id="titulo" name="firstname" type="text" class="validate form-control"
-                  [(ngModel)]="reportModel.titulo">
+                   #reportTitulo>
                 <label for="titulo" i18n="@@labReporte">Título</label>
               </div>
             </div>
             <div class="row row-input">
               <div class="input-field col s6">
                 <input id="first_name" name="firstname" type="text" class="validate form-control"
-                  [(ngModel)]="reportModel.nombre">
+                   #reportNombre>
                 <label for="first_name" i18n="@@lab1Reporte">Nombre</label>
               </div>
               <div class="input-field col s6">
                 <input id="last_name" name="fecha" type="text" class="validate form-control"
-                  [(ngModel)]="reportModel.fecha">
+                   #reportFecha>
                 <label for="last_name" i18n="@@lab3Reporte">Fecha</label>
               </div>
             </div>
             <div class="row row-input">
               <div class="input-field col s6">
                 <textarea id="textarea1" name="descripcion" class="materialize-textarea form-control"
-                  [(ngModel)]="reportModel.descripcion"></textarea>
+                   #reportDescripcion></textarea>
                 <label for="textarea1" i18n="@@lab4Reporte">Descripción del reporte</label>
               </div>
               <div class="input-field col s6">
@@ -101,7 +101,7 @@
                   <div class="file-field input-field">
                     <div class="btn">
                       <span i18n>Insertar foto</span>
-                      <input type="file" accept="image/png, image/jpeg, image/jpg" id="recognition-image-input">
+                      <input type="file" accept="image/png, image/jpeg, image/jpg" id="recognition-image-input"  #reportFoto>
                     </div>
                     <div class="file-path-wrapper">
                       <input class="file-path validate" type="text">
@@ -111,7 +111,7 @@
               </div>
             </div>
             <div class="center-align">
-              <a class="waves-effect waves-light btn-small " (click)="onSubmit()" i18n="@@a0Reporte">Publicar</a>
+              <a class="waves-effect waves-light btn-small " (click)="addReport(reportTitulo.value, reportNombre.value, reportFecha.value, reportDescripcion.value, reportFoto.value);" i18n="@@a0Reporte">Publicar</a>
             </div>
           </form>
         </div>

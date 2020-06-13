@@ -3,6 +3,7 @@ import { Report } from '../models/report';
 import { LogalStorageService } from '../services/logal-storage.service';
 
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { ReportService } from '../services/report.service';
 //import { createWorker } from 'tesseract.js';
 
 @Component({
@@ -17,7 +18,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class ReportsComponent implements OnInit {
 
-  reports: Report = this.localStorageService.readLocalStorageReports(); 
+  reports: Report = this.localStorageService.readLocalStorageReports();
   
   public divCrear = false;
   public divReportes = true;
@@ -25,7 +26,54 @@ export class ReportsComponent implements OnInit {
   public divValorado = true;
   public reportModel = new Report();
 
-  constructor(public localStorageService: LogalStorageService) {
+
+  constructor(public localStorageService: LogalStorageService, public reportService: ReportService){
+
+  }
+
+  report;
+
+
+  ngOnInit(): void {
+
+  }
+
+
+  getReports(){
+    this.report = this.reportService.getReport().subscribe((data: {}) => {
+      this.report = data;
+      console.log('respuesta ->' + this.report);
+    })
+    //console.log(this.adminService.getAdmins());
+  }
+
+  addReport(titulo: string, nombre: string, fecha, descripcion: string, foto): void {
+    nombre = nombre.trim();
+    if (!nombre || !titulo || !fecha || !descripcion || !foto)  { 
+      return; 
+    }
+    this.report = this.reportService.addReport({ nombre, titulo, fecha, descripcion, foto} as Report)
+
+      .subscribe(reports => {
+        this.report.push(reports);
+      });
+      
+  
+      alert("Reporte agregado");
+  }
+
+  /*
+  updateAdmin(id: string, nombre: string, correo: string, contrasena: string): void {
+    this.admins = this.adminService.updateAdmin({id, nombre, correo, contrasena}).subscribe(admin => {
+        this.admins.push(admin);
+      });
+    alert("Admin editado");
+  }
+  */
+
+  delete(id: string): void {
+    this.reportService.deleteReport({id}).subscribe();
+    alert("Usuario borrado, recarga la pagina para ver la nueva lista");
   }
 
   onSubmit() {
@@ -53,10 +101,8 @@ export class ReportsComponent implements OnInit {
     })();
     */
 
+  }
 
-  }
-  ngOnInit(): void {// this.localStorageService.storeOnLocalStorageReports(new Report("bache", "juan", "fecha", "descr", "foto", "hora"));
-  }
 
   verCrear() {
     this.divCrear = false;
@@ -88,3 +134,6 @@ export class ReportsComponent implements OnInit {
 
 
 }
+
+
+
