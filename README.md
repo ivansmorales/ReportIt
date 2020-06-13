@@ -3,7 +3,9 @@
 
 Miembros del proyecto:
 [Diego Moreno](https://github.com/DiegoMoreno1110) | A01337594
+
 [Alexandra Solis](https://github.com/aleesolish) | A01650803
+
 [Ivan Morales](https://github.com/ivansmorales) | A01652650
 
 Para descargar los módulos, favor de escribir el siguiente comando: npm install --save-dev @angular-devkit/build-angular
