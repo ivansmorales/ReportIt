@@ -9,11 +9,6 @@ Miembros del proyecto:
 
 [Ivan Morales](https://github.com/ivansmorales) | A01652650
 
-Para descargar los módulos, favor de escribir el siguiente comando: npm install --save-dev @angular-devkit/build-angular
-En caso de no descargar los módulos para local storage o internacionalización:
-npm install --save ngx-webstorage-service
-ng add @angular/localize
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
